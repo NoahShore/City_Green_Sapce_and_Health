@@ -7,7 +7,7 @@ Interactive Dashboard with User driven dropdown menu selections, and visualizati
 # GitHub Repository: https://github.com/NoahShore/City_Green_Sapce_and_Health 
 Find therein: Images, Data files, code files, Presentation slides, .... are in the directory. 
 
-## Acknowledgements: 
+# Acknowledgements: 
 Group 4 Team Members: Gabriela D. Salazar, Kent Andrews, Noah Shore, Naseema Omer 
 Bootcamp Course Data Visualization and Data Analytics Instructor: Hunter Hollis, TAs: Sam Espe and Randy Sendek, and Tutors.
 
@@ -18,7 +18,7 @@ Bootcamp Course Data Visualization and Data Analytics Instructor: Hunter Hollis,
         3.	adhere to regular health check-ups. 
 
 ### Project Description: 
-We studied the number of parks in a city from the Trust for Public (TPL) Land and related it to the specific Health Conditions'statistics documented based on populations in those cities by the Center of Disease Control and Prevention (CDC). 
+We studied, for year 2017, the number of parks in a city from the Trust for Public (TPL) Land and related it to the specific Health Conditions'statistics documented based on populations in those cities by the Center of Disease Control and Prevention (CDC).  
 Created an interactive User Friendly Dashboard on a Webpage with visual representations of our findings. 
 For example User can select a 'city' from the list of cities in the dropdown menu. This will reveal specific information displayed for the city, and display the visual chartings of 
 the Park Score Rank, the Obesity Value, Mental Health Value, Dr. visits for Routine CheckUp Value for the selected city. 
@@ -31,38 +31,28 @@ Hypothesis: Cities ranking higher in city green spaces have a lower:
 2.	mental health conditions, and 
 3.	adhere to regular health check-ups. 
 
-Summary / Findings
-
-Paste visualizations here ......
-
-
-## Technical Details: 
-The aim of this project is to combine the skills acquired in different programming languages and storytelling skills to create an interactive dashboard. The dashboard includes different visualizations representing the data gathered, cleaned, and analyzed to illustrate the impacts of health as it relates to available and accessible outdoor green spaces.
-Programs Used
-SQL alchemy was used to clean the datasets
-SQL was used to create a database with the cvs files with the data utilized and to show that it ran properly (screenshots attached).
-CSS was used to style our HTML document
-HTML/json was used to create the interactive dashboard and visualizations for the project using d3 and leaftlet
-
 ### Study: 
-        Based on Year 2017
+        Based for Year 2017 data
         Explored 100 USA Cities
         For Health conditions:
             Obesity. Age Group Adults >=18 years
             Mental Health not good for >=14 days. Age Group Adults >=18 years 
             Visits to Doctor for Routine Check-ups.  Age Group Adults >=18 years
 
-
-### Summary / Findings:
+### Summary:
 
         Assumptions: Healthier populations use the city parks more perhaps due to conveniance, work schedules, lifestyles, safer environments, their ages, ......
 
-        Paste visualizations here ......brief story of visualization....what the cdc value means, and what does the Park Score Rank mean. 
+        Paste visualizations here ......brief story of visualization....what the cdc value means, and what does the Park Score Rank mean. Summary / Findings
+
+Paste visualizations here ......
 
 ### CONCLUSION:
 
 
 ### NEXT STEPS: 
+
+
 
 
 ## TECHNICAL DETAILS: 
@@ -71,12 +61,12 @@ The aim of this project is to combine the skills acquired in different programmi
 The project is powered by a Python Flask API and includes HTML/CSS, JavaScript, SQL database. 
 
 ### Programs Used
-SQL alchemy was used to clean the datasets
-SQL (Postgres 14) was used to create a database with the cvs files with the data utilized and to show that it ran properly (screenshots attached).
-CSS was used to style our HTML document
-HTML/json was used to create the interactive dashboard and visualizations for the project using d3 and leaftlet
-Python FLASK API
-Multiple user-driven interactions: dropdown menu / filters, zoom feature are included in the dashboard
+    SQL alchemy was used to clean the datasets
+    SQL (Postgres 14) was used to create a database with the cvs files with the data utilized and to show that it ran properly (screenshots attached).
+    CSS was used to style our HTML document
+    HTML/json was used to create the interactive dashboard and visualizations for the project using d3 and leaftlet
+    Python FLASK API
+    Multiple user-driven interactions: dropdown menu / filters, zoom feature are included in the dashboard
 
 ## Datasets Selected / Source: 
 1.	TPL public data 
@@ -100,10 +90,16 @@ Multiple user-driven interactions: dropdown menu / filters, zoom feature are inc
 ## Data Limitations: 
 Rank and Score provided in data was used. The actual population size unknown. 
 
+
 ## ANALYSIS: 
 Data cleansing:  Needed data retained from files. 
-Tables created in SQL Postgres
+Database created in SQL Postgres named '
+Tables: 
 Data Joined using City and State Keys
+
+Codes: 
+
+
 
 # References:  
 https://www.geeksforgeeks.org/split-a-text-column-into-two-columns-in-pandas-dataframe/
