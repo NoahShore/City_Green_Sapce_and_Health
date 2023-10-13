@@ -1,4 +1,4 @@
-# City Green Space and Health: Obesity, Metal Health, Routine Dr. Check-ups
+# City Green Space and Health: Obesity, Metal Health, Dr. visits for routine check-ups
 ## BootCamp: Data Visualization and Data Analytics Course Project 3, Group 4 
 
 # Webpage Link: 
