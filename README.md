@@ -1,11 +1,41 @@
 # City Green Space and Health: Obesity, Metal Health, Routine Dr. Check-ups
 ## BootCamp: Data Visualization and Data Analytics. Group 4 Team Members: Gabriela D. Salazar, Kent Andrews, Noah Shore, Naseema Omer 
+
+Webpage Link: 
+GitHub Repository: 
+Images, Data files are in the directory  
+
 ## References: 
 
 ## Acknowledgements: 
 
-## Project Overview
+## Project Overview / Story
+We examined the number of parks in a city from the Trust for Public Land and related it to the specific Health Conditions'statistics documented based on populations in those cities by the Center of Disease Control and Prevention (CDC). 
+Study: 
+Year: 2017
+100 USA Cities
+Health conditions:
+    Obesity. Age Group Adults >=18 years
+    Mental Health not good for >=14 days. Age Group Adults >=18 years 
+    Visits to Doctor for Routine Check-ups.  Age Group Adults >=18 years
 
+Hypothesis: Cities ranking higher in city green spaces have a lower:
+1.	obesity rate, 
+2.	mental health conditions, and 
+3.	adhere to regular health check-ups. 
+
+Summary / Findings
+
+Paste visualizations here ......
+
+
+## Technical Details: 
+The aim of this project is to combine the skills acquired in different programming languages and storytelling skills to create an interactive dashboard. The dashboard includes different visualizations representing the data gathered, cleaned, and analyzed to illustrate the impacts of health as it relates to available and accessible outdoor green spaces.
+Programs Used
+SQL alchemy was used to clean the datasets
+SQL was used to create a database with the cvs files with the data utilized and to show that it ran properly (screenshots attached).
+CSS was used to style our HTML document
+HTML/json was used to create the interactive dashboard and visualizations for the project using d3 and leaftlet
 
 ## Data 
 ## Data Limitations
