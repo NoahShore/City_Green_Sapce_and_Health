@@ -1,11 +1,18 @@
-# City Green Space and Health: Obesity, Metal Health, Dr. visits for routine check-ups                       Updated 10/12/2023
+# City Green Space and Health: Obesity, Metal Health, Dr. visits for routine check-ups                       Updated 10/13/2023
 ## BootCamp: Data Visualization and Data Analytics Course Project 3, Group 4 
 
 # Webpage Link: 
 Interactive Dashboard with User driven dropdown menu selections, and visualizations for the selection. Pop-ups viewable with statistical data for city selected. 
 
 # GitHub Repository: https://github.com/NoahShore/City_Green_Sapce_and_Health 
-Find therein: Images, Data files, code files, Presentation slides, .... are in the directory. 
+Find in directory 'City_Green_Space_and_Health/ with:
+    Index.html, 
+    ReadMe
+    Presentation slides
+    Sub-directories:
+    Resources/ with files: raw and cleaned data, 
+    Static/ with code files: data, CSS, JavaScript, ipynb, SQLite, App.py 
+    Images/ with pictures 
 
 # Acknowledgements: 
 Group 4 Team Members: Gabriela D. Salazar, Kent Andrews, Noah Shore, Naseema Omer 
@@ -39,20 +46,31 @@ Hypothesis: Cities ranking higher in city green spaces have a lower:
             Mental Health not good for >=14 days. Age Group Adults >=18 years 
             Visits to Doctor for Routine Check-ups.  Age Group Adults >=18 years
 
-### Summary:
-
+### Assumptions:
         Assumptions: Healthier populations use the city parks more perhaps due to conveniance, work schedules, lifestyles, safer environments, their ages, ......
+        We did not look at whether the number of city parks was in proportion to the size of the city and its population. 
+        We do not know how many people actually visited any of the city parks. 
 
-        Paste visualizations here ......brief story of visualization....what the cdc value means, and what does the Park Score Rank mean. Summary / Findings
+### Summary: 
 
-Paste visualizations here ......
+### Visualizations. Paste visualizations here ......
+brief story of visualization....what the cdc value means, and what does the Park Score Rank mean.
 
 ### CONCLUSION:
 
 
 ### NEXT STEPS: 
+Visit green spaces more often for various activities: Walks, bike rides, lunches / picnics, reading, meditations, etc. 
 
+Visit your care provider for your wellness and health routine check-ups
 
+Business can implement more wellness or within their wellness / incentive program offerings to encourage employees/families to enjoy green spaces
+
+City or State Parks could develop apps for personal tracking of park visits to encourage more people to make the effort, and track their activities (fitness measures) specifically completed oon park grounds.  
+
+Parks could gather counts of active app users to leverage getting more funding/grants for parks, and educational, wellness programs in the parks. 
+
+Further research / analysis is needed on the density of the city compared to the number of city parks, counts of visits to the park, geographical locations income level of neighbourhoods,
 
 
 ## TECHNICAL DETAILS: 
@@ -61,7 +79,7 @@ The aim of this project is to combine the skills acquired in different programmi
 The project is powered by a Python Flask API and includes HTML/CSS, JavaScript, SQL database. 
 
 ### Programs Used
-    SQL alchemy was used to clean the datasets
+    SQLAlchemy was used to clean the datasets
     SQL (Postgres 14) was used to create a database with the cvs files with the data utilized and to show that it ran properly (screenshots attached).
     CSS was used to style our HTML document
     HTML/json was used to create the interactive dashboard and visualizations for the project using d3 and leaftlet
