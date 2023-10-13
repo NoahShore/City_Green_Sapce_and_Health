@@ -1,76 +1,94 @@
 # City Green Space and Health: Obesity, Metal Health, Routine Dr. Check-ups
-## BootCamp: Data Visualization and Data Analytics. Group 4 Team Members: Gabriela D. Salazar, Kent Andrews, Noah Shore, Naseema Omer 
-## References: 
+## BootCamp: Data Visualization and Data Analytics Course Project 3, Group 4 
+
+# Webpage Link: 
+Interactive Dashboard with User driven dropdown menu selections, and visualizations for the selection. Pop-ups viewable with statistical data for city selected. 
+
+# GitHub Repository: https://github.com/NoahShore/City_Green_Sapce_and_Health 
+Find therein: Images, Data files, code files, Presentation slides, .... are in the directory. 
 
 ## Acknowledgements: 
+Group 4 Team Members: Gabriela D. Salazar, Kent Andrews, Noah Shore, Naseema Omer 
+Bootcamp Course Data Visualization and Data Analytics Instructor: Hunter Hollis, TAs: Sam Espe and Randy Sendek, and Tutors.
 
-## Project Overview
+## PROJECT OVERVIEW / STORY
+### Hypothesis: Cities ranking higher in city green spaces have a lower:
+        1.	obesity rate, 
+        2.	mental health conditions, and 
+        3.	adhere to regular health check-ups. 
+
+### Project Description: 
+We studied the number of parks in a city from the Trust for Public (TPL) Land and related it to the specific Health Conditions'statistics documented based on populations in those cities by the Center of Disease Control and Prevention (CDC). 
+Created an interactive User Friendly Dashboard on a Webpage with visual representations of our findings. 
+For example User can select a 'city' from the list of cities in the dropdown menu. This will reveal specific information displayed for the city, and display the visual chartings of 
+the Park Score Rank, the Obesity Value, Mental Health Value, Dr. visits for Routine CheckUp Value for the selected city. 
+
+Define the CDC 'Value': 
+Define the 'Park Score Rank':
 
 
-## Data 
-## Data Limitations
+### Study: 
+        Based on Year 2017
+        Explored 100 USA Cities
+        For Health conditions:
+            Obesity. Age Group Adults >=18 years
+            Mental Health not good for >=14 days. Age Group Adults >=18 years 
+            Visits to Doctor for Routine Check-ups.  Age Group Adults >=18 years
 
 
-Project Title: Green Space availability and – Obesity – Mental Health – routine Dr. check-ups
+### Summary / Findings:
 
-Team Members: 
-Gabriela D. Salazar, Kent Andrews, Noah Shore, Naseema Omer 
-Project Description / Outline:  
-Create Visualizations using specific data to illustrate the impacts of health as it relates to available and accessible outdoor green spaces. 
-Hypothesis / Research Questions to Answer:
-Hypothesis: Cities ranking higher in city green spaces have a lower:
-1.	obesity rate, 
-2.	mental health conditions, and 
-3.	adhere to regular health check-ups. 
-Datasets to be used: 
-1.	Green Spaces (City Parks): https://www.tpl.org/park-data-downloads
-https://parkserve.tpl.org/downloads/historic/2017_ParkScoreRank.pdf
-The parks data has a downloadable zip file that contains excel sheets with the acreage data that we will be using.
-2.	Routine Check-up, etc. https://data.cdc.gov/500-Cities-Places/500-Cities-Visits-to-doctor-for-routine-checkup-wi/2q6t-jyye
+        Assumptions: Healthier populations use the city parks more perhaps due to conveniance, work schedules, lifestyles, safer environments, their ages, ......
 
-3.	Obesity: https://data.cdc.gov/500-Cities-Places/500-Cities-Obesity-among-adults-aged-18-years/bjvu-3y7d
+        Paste visualizations here ......brief story of visualization....what the cdc value means, and what does the Park Score Rank mean. 
 
-4.	Mental Health: https://data.cdc.gov/500-Cities-Places/500-Cities-Mental-health-not-good-for-14-days-amon/i2ek-k3pa
-Rough breakdown of Tasks: 	
-1	Dataset selection. - All. 
-2.	GitHub Repository – Noah 
-3.	Data import, and cleansing – Noah
-4.	Create SQL database – Noah 
-5.	Create a Dashboard / Menu dropdowns / Visualizations 3 min
-Using html, css, js. Leaflet. D3.- Noah, Kent 
-6.	Map.  Gauge /Meter. Bar Chart.- Gabriela, Naseema
-7.	Python Flask-powered API
-8.	Conclusions – suggestions – next steps 
-9.	ReadMe
-10.	Slide Deck template – Naseema.
-11.	Presentation – All 
+### CONCLUSION:
 
-ReadMe: 
-Data limitations
-Data -What they mean 
 
-Requirements: 
-Requirements
-Data and Delivery (25 points)
-Data components used in the project are clearly documented. (5 points)
-The dataset contains at least 100 unique records. (5 points)
-A database is used to house the data (SQL, MongoDB, SQLite, etc.). (5 points)
-The project is powered by a Python Flask API and includes HTML/CSS, JavaScript, and the chosen database. (10 points)
-Back End (25 points)
-The page created to showcase data visualizations runs without error. (7.5 points)
-A JavaScript library not shown in class is used in the project. (7.5 points)
-The project conforms to one of the following designs: (10 points)
-A Leaflet or Plotly chart built from data gathered through web scraping.
-A dashboard page with multiple charts that all reference the same data.
-Visualizations (25 points)
-A minimum of three unique views present the data. (5 points)
-Multiple user-driven interactions (such as dropdowns, filters, or a zoom feature) are included on the final page. (5 points)
-The final page displays visualizations in a clear, digestable manner. (5 points)
-The data story is easy to interpret for users of all levels. (10 points)
-Group Presentation (25 points)
-All group members speak during the presentation. (5 points)
-The content is relevant to the project. (5 points)
-The presentation maintains audience interest. (5 points)
-Content, transitions, and conclusions flow smoothly within any time restrictions. (10 points)
-Grading
-This assignment will be evaluated against the requirements and assigned a grade according to the following table:
+### NEXT STEPS: 
+
+
+## TECHNICAL DETAILS: 
+The aim of this project is to combine the skills acquired in different programming languages and storytelling skills to create an interactive dashboard. The dashboard includes different visualizations representing the data gathered, cleaned, and analyzed to illustrate the impacts of health as it relates to available and accessible outdoor green spaces.
+
+The project is powered by a Python Flask API and includes HTML/CSS, JavaScript, SQL database. 
+
+### Programs Used
+SQL alchemy was used to clean the datasets
+SQL (Postgres 14) was used to create a database with the cvs files with the data utilized and to show that it ran properly (screenshots attached).
+CSS was used to style our HTML document
+HTML/json was used to create the interactive dashboard and visualizations for the project using d3 and leaftlet
+Python FLASK API
+Multiple user-driven interactions: dropdown menu / filters, zoom feature are included in the dashboard
+
+## Datasets Selected / Source: 
+1.	TPL public data 
+    Green Spaces (City Parks): https://www.tpl.org/park-data-downloads
+
+    City Parks Data for year 2017: https://parkserve.tpl.org/downloads/historic/2017_ParkScoreRank.pdf
+
+    The parks data downloadable zip file contains excel sheets with the acreage data that we will be using.
+
+    State data for each city in the City Parks: https://www.tpl.org/2023-city-park-facts This file has the City and State data.  
+    The State data from this file was added to the Cities Acreage Data for our analysis. 
+
+2. CDC public data 
+    Doctor Visits for routine checkup:  https://data.cdc.gov/500-Cities-Places/500-Cities-Visits-to-doctor-for-routine-checkup-wi/2q6t-jyye
+
+    Obesity: https://data.cdc.gov/500-Cities-Places/500-Cities-Obesity-among-adults-aged-18-years/bjvu-3y7d
+
+    Mental Health: https://data.cdc.gov/500-Cities-Places/500-Cities-Mental-health-not-good-for-14-days-amon/i2ek-k3pa
+
+
+## Data Limitations: 
+Rank and Score provided in data was used. The actual population size unknown. 
+
+## ANALYSIS: 
+Data cleansing:  Needed data retained from files. 
+Tables created in SQL Postgres
+Data Joined using City and State Keys
+
+# References:  
+https://www.geeksforgeeks.org/split-a-text-column-into-two-columns-in-pandas-dataframe/
+
+https://saturncloud.io/blog/how-to-remove-commas-from-all-columns-in-pandas-at-once/#:~:text=Now%20that%20we%20know%20which,replace()%20function%20in%20Pandas.&text=In%20this%20code%2C%20we%20loop%20through%20each%20column%20that%20contains,the%20commas%20from%20the%20column
