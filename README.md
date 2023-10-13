@@ -1,5 +1,4 @@
 # City Green Space and Health: Obesity, Metal Health, Routine Dr. Check-ups
-<<<<<<< HEAD
 ## BootCamp: Data Visualization and Data Analytics Course Project 3, Group 4 
 
 # Webpage Link: 
@@ -7,21 +6,11 @@ Interactive Dashboard with User driven dropdown menu selections, and visualizati
 
 # GitHub Repository: https://github.com/NoahShore/City_Green_Sapce_and_Health 
 Find therein: Images, Data files, code files, Presentation slides, .... are in the directory. 
-=======
-## BootCamp: Data Visualization and Data Analytics. Group 4 Team Members: Gabriela D. Salazar, Kent Andrews, Noah Shore, Naseema Omer 
-
-Webpage Link: 
-GitHub Repository: 
-Images, Data files are in the directory  
-
-## References: 
->>>>>>> bdb815b163aacdf67209df3e117ebb3e51b0847f
 
 ## Acknowledgements: 
 Group 4 Team Members: Gabriela D. Salazar, Kent Andrews, Noah Shore, Naseema Omer 
 Bootcamp Course Data Visualization and Data Analytics Instructor: Hunter Hollis, TAs: Sam Espe and Randy Sendek, and Tutors.
 
-<<<<<<< HEAD
 ## PROJECT OVERVIEW / STORY
 ### Hypothesis: Cities ranking higher in city green spaces have a lower:
         1.	obesity rate, 
@@ -36,17 +25,6 @@ the Park Score Rank, the Obesity Value, Mental Health Value, Dr. visits for Rout
 
 Define the CDC 'Value': 
 Define the 'Park Score Rank':
-=======
-## Project Overview / Story
-We examined the number of parks in a city from the Trust for Public Land and related it to the specific Health Conditions'statistics documented based on populations in those cities by the Center of Disease Control and Prevention (CDC). 
-Study: 
-Year: 2017
-100 USA Cities
-Health conditions:
-    Obesity. Age Group Adults >=18 years
-    Mental Health not good for >=14 days. Age Group Adults >=18 years 
-    Visits to Doctor for Routine Check-ups.  Age Group Adults >=18 years
->>>>>>> bdb815b163aacdf67209df3e117ebb3e51b0847f
 
 Hypothesis: Cities ranking higher in city green spaces have a lower:
 1.	obesity rate, 
