@@ -1,0 +1,101 @@
+city,state,park_acres,percent_of_city_area
+Anchorage,AK,871795,80
+Fremont,CA,21957,44
+Chesapeake,VA,58693,27
+Scottsdale,AZ,31598,27
+Irvine,CA,11008,26
+North Las Vegas,NV,16705,26
+Washington,DC,9296,24
+New Orleans,LA,24737,23
+Santa Clarita,CA,9723,21
+New York,NY,39796,21
+San Francisco,CA,6164,21
+Albuquerque,NM,22157,19
+San Diego,CA,40122,19
+El Paso,TX,30012,18
+Jacksonville,FL,84324,18
+Portland,OR,14662,18
+Boston,MA,5160,18
+Las Vegas,NV,16010,18
+Honolulu,HI,64795,17
+Virginia Beach,VA,25993,17
+Cincinnati,OH,8057,17
+Phoenix,AZ,51020,16
+St. Paul,MN,4973,15
+Minneapolis,MN,5078,15
+Oakland,CA,4927,15
+Anaheim,CA,4584,14
+Pittsburgh,PA,4975,14
+Madison,WI,7145,14
+St. Petersburg,FL,5343,14
+San Jose,CA,15221,14
+Los Angeles,CA,39626,13
+Philadelphia,PA,10797,13
+Raleigh,NC,11804,12
+Houston,TX,43486,12
+Seattle,WA,6480,12
+Colorado Springs,CO,14785,12
+Jersey City,NJ,1091,12
+Omaha,NE,10336,12
+Austin,TX,19069,11
+Arlington,VA,1759,11
+Sacramento,CA,6747,11
+Columbus,OH,14513,11
+Greensboro,NC,8795,10
+Chicago,IL,13866,10
+San Antonio,TX,32001,10
+Aurora,CO,10409,10
+Plano,TX,4588,10
+St. Louis,MO,3889,10
+Baltimore,MD,5102,10
+Kansas City,MO,18816,10
+Dallas,TX,20835,10
+Long Beach,CA,3034,10
+Milwaukee,WI,5591,9
+Buffalo,NY,2383,9
+Denver,CO,7028,9
+Spokane,WA,3670,9
+Louisville,KY,17922,9
+Nashville/Davidson,TN,26199,9
+Henderson,NV,5504,8
+Boise,ID,4227,8
+Garland,TX,2951,8
+Chula Vista,CA,2482,8
+Riverside,CA,3976,8
+Tampa,FL,5045,7
+Richmond,VA,2755,7
+Miami,FL,1639,7
+Arlington,TX,4321,7
+Cleveland,OH,3311,7
+Corpus Christi,TX,7077,7
+Tulsa,OK,8580,7
+Charlotte/Mecklenburg,NC,22656,7
+Atlanta,GA,5530,6
+Lincoln,NE,3808,6
+Newark,NJ,851,6
+Memphis,TN,11163,6
+Fort Worth,TX,13156,6
+Toledo,OH,2995,6
+Detroit,MI,5134,6
+Bakersfield,CA,5364,6
+Norfolk,VA,1792,5
+Irving,TX,1988,5
+Orlando,FL,3411,5
+Reno,NV,3390,5
+Glendale,AZ,2100,5
+Oklahoma City,OK,18588,5
+Fresno,CA,3429,5
+Winston-Salem,NC,3797,4
+Wichita,KS,4327,4
+Tucson,AZ,6195,4
+Durham,NC,2755,4
+Chandler,AZ,1518,4
+Laredo,TX,2432,4
+Santa Ana,CA,600,3
+Stockton,CA,1199,3
+Gilbert,AZ,1284,3
+Mesa,AZ,2470,3
+Baton Rouge,LA,1455,3
+Lubbock,TX,2228,3
+Lexington/Fayette,KY,4447,2
+Hialeah,FL,238,2
