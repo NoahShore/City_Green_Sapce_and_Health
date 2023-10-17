@@ -1,0 +1,96 @@
+city,state,park_acres,percent_of_city_area,dv_data_value,ob_data_value,mh_data_value
+Albuquerque,NM,22157,19,59.4,27.2,14.2
+Anaheim,CA,4584,14,66.2,23.0,12.6
+Anchorage,AK,871795,80,54.2,34.1,11.0
+Arlington,TX,4321,7,68.4,34.2,13.3
+Atlanta,GA,5530,6,73.9,31.1,12.0
+Aurora,CO,10409,10,63.2,26.8,12.7
+Austin,TX,19069,11,65.5,26.5,11.6
+Bakersfield,CA,5364,6,66.0,29.5,14.2
+Baltimore,MD,5102,10,75.0,39.6,15.7
+Baton Rouge,LA,1455,3,74.9,37.7,16.6
+Boston,MA,5160,18,74.7,26.7,13.7
+Buffalo,NY,2383,9,75.8,36.3,16.3
+Chandler,AZ,1518,4,67.1,25.9,11.2
+Chesapeake,VA,58693,27,75.2,35.0,12.6
+Chicago,IL,13866,10,69.2,33.0,12.7
+Chula Vista,CA,2482,8,67.8,24.1,11.7
+Cincinnati,OH,8057,17,74.5,37.8,16.0
+Cleveland,OH,3311,7,75.4,41.2,18.2
+Colorado Springs,CO,14785,12,62.1,23.3,12.6
+Columbus,OH,14513,11,73.5,35.7,15.0
+Corpus Christi,TX,7077,7,67.4,34.9,13.4
+Dallas,TX,20835,10,68.1,35.2,14.1
+Denver,CO,7028,9,58.4,21.4,11.4
+Detroit,MI,5134,6,78.6,44.9,18.7
+Durham,NC,2755,4,74.1,32.2,12.6
+El Paso,TX,30012,18,65.5,35.7,13.2
+Fort Worth,TX,13156,6,68.2,36.0,13.9
+Fremont,CA,21957,44,65.5,16.5,8.4
+Fresno,CA,3429,5,64.6,31.2,14.8
+Garland,TX,2951,8,67.1,32.0,13.9
+Gilbert,AZ,1284,3,66.9,25.0,10.9
+Glendale,AZ,2100,5,66.4,31.0,14.2
+Greensboro,NC,8795,10,74.1,34.0,13.5
+Henderson,NV,5504,8,65.8,24.4,12.3
+Hialeah,FL,238,2,71.0,34.2,15.6
+Honolulu,HI,64795,17,71.3,23.8,10.5
+Houston,TX,43486,12,69.5,34.4,13.4
+Irvine,CA,11008,26,67.7,16.1,9.2
+Irving,TX,1988,5,67.2,30.5,12.8
+Jacksonville,FL,84324,18,73.2,32.7,14.4
+Jersey City,NJ,1091,12,76.5,27.9,12.6
+Kansas City,MO,18816,10,70.8,35.7,14.2
+Laredo,TX,2432,4,65.9,42.8,15.1
+Las Vegas,NV,16010,18,66.0,28.0,13.9
+Lincoln,NE,3808,6,64.2,31.4,10.9
+Long Beach,CA,3034,10,67.5,25.2,12.7
+Los Angeles,CA,39626,13,66.9,25.6,12.8
+Louisville,KY,17922,9,75.3,34.5,14.9
+Lubbock,TX,2228,3,65.4,35.6,14.1
+Madison,WI,7145,14,65.8,27.5,10.8
+Memphis,TN,11163,6,73.1,38.9,15.8
+Mesa,AZ,2470,3,66.2,29.7,13.5
+Miami,FL,1639,7,72.6,33.4,15.0
+Milwaukee,WI,5591,9,73.6,36.2,15.3
+Minneapolis,MN,5078,15,69.1,27.5,10.7
+New Orleans,LA,24737,23,73.0,36.1,15.5
+New York,NY,39796,21,74.3,24.7,12.9
+Newark,NJ,851,6,76.7,39.2,16.4
+Norfolk,VA,1792,5,74.4,35.9,13.8
+North Las Vegas,NV,16705,26,67.1,29.6,14.4
+Oakland,CA,4927,15,66.3,26.7,12.4
+Oklahoma City,OK,18588,5,67.0,34.4,15.4
+Omaha,NE,10336,12,67.5,34.0,12.1
+Orlando,FL,3411,5,72.2,30.5,14.0
+Philadelphia,PA,10797,13,74.0,34.1,16.1
+Phoenix,AZ,51020,16,66.4,31.0,13.9
+Pittsburgh,PA,4975,14,71.5,31.9,13.9
+Plano,TX,4588,10,67.1,26.7,9.9
+Portland,OR,14662,18,59.3,25.1,13.6
+Raleigh,NC,11804,12,75.4,31.5,11.8
+Reno,NV,3390,5,63.1,24.6,14.0
+Richmond,VA,2755,7,72.8,35.8,14.3
+Riverside,CA,3976,8,66.2,28.9,13.9
+Sacramento,CA,6747,11,67.2,30.7,13.5
+San Antonio,TX,32001,10,64.3,35.0,13.6
+San Diego,CA,40122,19,67.8,22.4,11.3
+San Francisco,CA,6164,21,67.3,17.9,10.2
+San Jose,CA,15221,14,62.9,20.1,10.3
+Santa Ana,CA,600,3,65.3,26.3,14.4
+Santa Clarita,CA,9723,21,66.5,22.1,11.3
+Scottsdale,AZ,31598,27,66.7,24.5,10.5
+Seattle,WA,6480,12,63.5,21.1,11.2
+Spokane,WA,3670,9,62.1,30.1,15.2
+St. Louis,MO,3889,10,74.7,36.4,14.9
+St. Paul,MN,4973,15,69.3,28.6,12.0
+St. Petersburg,FL,5343,14,72.5,29.7,14.4
+Stockton,CA,1199,3,68.3,31.7,14.4
+Tampa,FL,5045,7,73.4,31.2,14.8
+Toledo,OH,2995,6,74.4,43.8,16.8
+Tucson,AZ,6195,4,64.7,29.7,14.4
+Tulsa,OK,8580,7,67.6,36.6,16.0
+Virginia Beach,VA,25993,17,72.1,28.4,11.7
+Washington,DC,9296,24,78.4,26.7,11.1
+Wichita,KS,4327,4,66.7,34.2,13.8
+Winston-Salem,NC,3797,4,72.6,34.4,14.3
