@@ -37,9 +37,9 @@ hello_dict = {"Hello": "World!"}
 #################################################
 # Flask Routes
 #################################################
-@app.route("/")
+@app.route("/")#DEFINES HOMEPAGE
 def index():
-    return "Hello, world!"
+    return render_template('index.html')
 # or
 def welcome():
     """List all available api routes."""
@@ -139,8 +139,6 @@ def about():
     print("Server received request for 'About' page...")
     return "Welcome to my 'About' page!"
 
-
+#NEEDS TO BE THE LAST LINE OF THE PROGRAM
 if __name__ == "__main__":
     app.run(debug=True)
-
-app = Flask(__name__)
