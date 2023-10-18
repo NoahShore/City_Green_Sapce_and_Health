@@ -2,17 +2,18 @@
 ## BootCamp: Data Visualization and Data Analytics Course Project 3, Group 4 
 
 # Webpage Link: 
-Interactive Dashboard with User driven dropdown menu selections, and visualizations for the selection. Pop-ups viewable with statistical data for city selected. 
+Dashboard: Interactive Dashboard with User driven dropdown menu selections, and visualizations for the selection. Pop-ups viewable with statistical data for city selected. 
 
 # GitHub Repository: https://github.com/NoahShore/City_Green_Sapce_and_Health 
 Find in directory 'City_Green_Space_and_Health/ with:
-    Index.html, 
     ReadMe
     Presentation slides
     Sub-directories:
-    Resources/ with files: raw and cleaned data, 
-    Static/ with code files: data, CSS, JavaScript, ipynb, SQLite, App.py 
-    Images/ with pictures 
+    Resources: /csv_outputs, /Data Cleaning, /City Park Facts.  
+    static: /js for JavaScript file  
+    templates: html files 
+    images:pictures 
+    app.py
 
 # Acknowledgements: 
 Group 4 Team Members: Gabriela D. Salazar, Kent Andrews, Noah Shore, Naseema Omer 
@@ -80,6 +81,7 @@ The project is powered by a Python Flask API and includes HTML/CSS, JavaScript, 
 
 ### Programs Used
     SQLAlchemy was used to clean the datasets
+    Database = Mongo Db
     SQL (Postgres 14) was used to create a database with the cvs files with the data utilized and to show that it ran properly (screenshots attached).
     CSS was used to style our HTML document
     HTML/json was used to create the interactive dashboard and visualizations for the project using d3 and leaftlet
@@ -111,9 +113,10 @@ Rank and Score provided in data was used. The actual population size unknown.
 
 ## ANALYSIS: 
 Data cleansing:  Needed data retained from files. 
-Database created in SQL Postgres named '
-Tables: 
-Data Joined using City and State Keys
+Database tables created in SQL Postgres, then joined using City and State Keys
+Tables: master_table.csv created with all the needed data for analysis
+Database = Mongo Db
+
 
 Codes: 
 
