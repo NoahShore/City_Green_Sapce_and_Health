@@ -1,8 +1,9 @@
 #DRAFT TEMPLATE from 10.3 flask activities EXAMPLES
 
-# 1. import Flask
-from flask import Flask
-# or more applicable imports
+# 1. LEAVE THIS IN HERE import Flask
+from flask import Flask, render_template, jsonify
+from flask_pymongo import PyMongo
+# LEAVE IN HERE FOR NOW, WE MAY NEED SOME...or more applicable imports
 import numpy as np
 
 import sqlalchemy
@@ -10,10 +11,20 @@ from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, func
 
+# Create an app, being sure to pass __name__
+#################################################
+# Flask Setup
+#################################################
+#LEAVE THIS IN HERE  SHOULD BE FIRST. 
+app = Flask(__name__)
+
+mongo = PyMongo(app, uri='mongodb://localhost:27017/USPoliceShootingData')
+
 #################################################
 # Database Setup
 #################################################
-engine = create_engine("sqlite:///titanic.sqlite")
+#LEAVE THIS IN HERE
+engine = create_engine("path to the .sqlite") ## needs to be .sqlite file name. 
 
 # reflect an existing database into a new model
 Base = automap_base()
@@ -21,35 +32,70 @@ Base = automap_base()
 Base.prepare(autoload_with=engine)
 
 # Save reference to the table
-Passenger = Base.classes.passenger
+Cities = Base.classes.cities
 
 
-# Create an app, being sure to pass __name__
-#################################################
-# Flask Setup
-#################################################
-app = Flask(__name__)
 
 # Create a dictionary to hold a key, value pair.
-hello_dict = {"Hello": "World!"}
+city_obesity_dict = {"": ""}
+city_mh_dict = {}
+city_drvisit = {}
 
 # 3. Define static routes. Define what to do when a user hits the index route
 #################################################
 # Flask Routes
 #################################################
-@app.route("/")#DEFINES HOMEPAGE
-def index():
+#each page of website needs its own app.route
+#LEAVE THIS ROUTE AS IS. IT DEFINES THE HOMEPAGE. 
+# Add function below it. 
+@app.route("/")
+def homepage():
     return render_template('index.html')
+
+# Route to get data from MongoDB
+@app.route("/mongo")
+def readMongo():
+    data = mongo.db.PoliceShootingData.find({}, {'_id': 0, 'latitude': 1, 'longitude': 1, 'is_geocoding_exact': 1,
+                                            'name': 1, 'date': 1, 'age': 1, 'sex': 1, 'ethnicity': 1, 'armed': 1, 'city': 1, 'state': 1})
+    result = []
+    for item in data:
+        result.append(item)
+    print(jsonify(result))
+    return jsonify(result)
+
+def index():
+    return "Welcome to Green Space and Health"
 # or
 def welcome():
     """List all available api routes."""
     return (
-         f"Welcome to the Justice League API!<br/>"
+         f"Welcome to Green Space and Health<br/>"
         f"Available Routes:<br/>"
         f"/api/v1.0/justice-league<br/>"
         f"/api/v1.0/justice-league/superhero/batman<br/>"
         f"/api/v1.0/justice-league/real_name/bruce%20wayne"
     )
+
+# First visualization page - map
+@app.route("/map")
+def map():
+    return render_template('map.html')
+
+# Second visualization page - bubble chart
+@app.route("/bar_chart")
+def bubble_chart():
+    shootingData = mongo.db.PoliceShootingData.find({}, {'_id': 0, 'armed': 1})
+    result = shootingData
+    return render_template('bar_chart.html', result=result)
+
+# Third visualization page - pie charts
+@app.route("/pie_charts")
+def pie_charts():
+    shootingData = mongo.db.PoliceShootingData.find(
+        {}, {'_id': 0, 'age': 1, 'ethnicity': 1, 'sex': 1})
+    result = shootingData
+    return render_template('pie_charts.html', result=result)
+
 # @app.route("/about")
 # def about():
 
@@ -139,6 +185,14 @@ def about():
     print("Server received request for 'About' page...")
     return "Welcome to my 'About' page!"
 
-#NEEDS TO BE THE LAST LINE OF THE PROGRAM
+@app.route('/data')
+def data():
+    shootingData = mongo.db.PoliceShootingData.find({}, {'_id': False})
+    result = shootingData
+    return render_template('data.html', result=result)
+
+## LEAVE THIS IN HERE this has to be the very last 2 lines
+# End Flask 
 if __name__ == "__main__":
     app.run(debug=True)
+
