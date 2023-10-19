@@ -21,6 +21,7 @@ CREATE TABLE park_data (
 	state VARCHAR(5) NOT NULL,
 	park_acres INT NOT NULL,
 	percent_of_city_area INT NOT NULL
+);
 
 SELECT pd.city, pd.state, dv.city, dv.state, pd.park_acres
 FROM park_data pd
