@@ -1,8 +1,8 @@
 // Place url in a constant variable
-const url = "https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json"
+const mongo_endpoint='mongo';
 
 // Fetch the JSON data and console log it
-d3.json(url).then(function(data) {
+d3.json(mongo_endpoint).then(function(data) {
   console.log(data);
 });
 
@@ -13,13 +13,13 @@ function init() {
     let dropdownMenu = d3.select("#selDataset");
 
     // Use D3 to get sample names and populate the drop-down selector
-    d3.json(url).then((data) => {
+    d3.json(mongo_endpoint).then((data) => {
         
         // Set a variable for the sample names
-        let names = data.names;
+        let cities = data.city;
 
         // Add  samples to dropdown menu
-        names.forEach((id) => {
+        city.forEach((id) => {
 
             // Log the value of id for each iteration of the loop
             console.log(id);
