@@ -18,28 +18,27 @@ from sqlalchemy import create_engine, func
 #LEAVE THIS IN HERE  SHOULD BE FIRST. 
 app = Flask(__name__)
 
-mongo = PyMongo(app, uri='mongodb://localhost:27017/USPoliceShootingData')
+mongo = PyMongo(app, uri='mongodb://localhost:27017/green_space_and_health')
 
 #################################################
 # Database Setup
 #################################################
 #LEAVE THIS IN HERE
-engine = create_engine("path to the .sqlite") ## needs to be .sqlite file name. 
+engine = create_engine(mongo)  
 
-# reflect an existing database into a new model
-Base = automap_base()
-# reflect the tables
-Base.prepare(autoload_with=engine)
+# # reflect an existing database into a new model
+# Base = automap_base()
+# # reflect the tables
+# Base.prepare(autoload_with=engine)
 
-# Save reference to the table
-Cities = Base.classes.cities
+# # Save reference to the table
+# Cities = Base.classes.cities
 
 
-
-# Create a dictionary to hold a key, value pair.
-city_obesity_dict = {"": ""}
-city_mh_dict = {}
-city_drvisit = {}
+# # Create a dictionary to hold a key, value pair.
+# city_obesity_dict = {"": ""}
+# city_mh_dict = {}
+# city_drvisit = {}
 
 # 3. Define static routes. Define what to do when a user hits the index route
 #################################################
@@ -50,13 +49,14 @@ city_drvisit = {}
 # Add function below it. 
 @app.route("/")
 def homepage():
-    return render_template('index.html')
+     return render_template('index.html', data = data)
 
 # Route to get data from MongoDB
 @app.route("/mongo")
 def readMongo():
-    data = mongo.db.PoliceShootingData.find({}, {'_id': 0, 'latitude': 1, 'longitude': 1, 'is_geocoding_exact': 1,
-                                            'name': 1, 'date': 1, 'age': 1, 'sex': 1, 'ethnicity': 1, 'armed': 1, 'city': 1, 'state': 1})
+    data = mongo.db.green_space_and_health.find({}, {'city': 1, 'state': 1, 'park_acres': 1,
+                                            'percent_of_city_area': 1, 'dv_data_value': 1, 'ob_data_value': 1, 
+                                            'mh_data_value': 1})
     result = []
     for item in data:
         result.append(item)
@@ -75,6 +75,11 @@ def welcome():
         f"/api/v1.0/justice-league/superhero/batman<br/>"
         f"/api/v1.0/justice-league/real_name/bruce%20wayne"
     )
+
+def plot_values():
+    data = {'x_values':[], 'y_values':[]}
+    return render_template('index.html', data = data)
+
 
 # First visualization page - map
 @app.route("/map")
