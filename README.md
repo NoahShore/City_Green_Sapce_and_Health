@@ -9,7 +9,7 @@ Find in directory 'City_Green_Space_and_Health/ with:
     ReadMe
     Presentation slides
     Sub-directories:
-    Resources: /csv_outputs, /Data Cleaning, /City Park Facts.  
+    Data: csv_outputs, City Park Facts files:'500_cities_data_sort.ipynb and city_park_data_sort.ipynb, Database: MongoDb 'mongo_setup.ipynb'.  
     static: /js for JavaScript file  
     templates: html files 
     images:pictures 
