@@ -50,18 +50,18 @@ def map():
 
 # Second visualization page - bubble chart
 @app.route("/bar_chart")
-def bubble_chart():
-    shootingData = mongo.db.data.find({}, {'_id': 0, 'cities': 1, 'park_acres':1})
-    result = shootingData
+def bar_chart():
+    city_data = mongo.db.data.find({}, {'_id': 0, 'cities': 1, 'state': 1, 'park_acres':1})
+    result = city_data
     return render_template('bar_chart.html', result=result)
 
 # Third visualization page - pie charts
-@app.route("/pie_charts")
-def pie_charts():
-    shootingData = mongo.db.PoliceShootingData.find(
-        {}, {'_id': 0, 'age': 1, 'ethnicity': 1, 'sex': 1})
-    result = shootingData
-    return render_template('pie_charts.html', result=result)
+@app.route("/bubble_chart")
+def bubble_chart():
+    bub_data = mongo.db.data.find(
+        {}, {'_id': 0, 'cities': 1, 'state': 1, 'ob_data_value': 1})
+    result = bub_data
+    return render_template('bubble_chart.html', result=result)
 
 # @app.route("/about")
 # def about():
