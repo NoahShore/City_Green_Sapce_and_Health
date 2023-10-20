@@ -50,7 +50,7 @@ def map():
 
 # Second visualization page - bubble chart
 @app.route("/bar_chart")
-def bubble_chart():
+def bar_chart():
     city_data = mongo.db.data.find({}, {'_id': 0, 'cities': 1, 'state': 1, 'park_acres':1})
     result = city_data
     return render_template('bar_chart.html', result=result)
