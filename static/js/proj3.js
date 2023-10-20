@@ -1,8 +1,10 @@
 // Place url in a constant variable
-//const url = "mongodb://localhost:8000/green_space_and_health"
-const url = "master-table.json"
+
+const mongo_endpoint='mongo';
+
 // Fetch the JSON data and console log it
-d3.json(url, function(data) {
+d3.json(mongo_endpoint).then(function(data) {
+
   console.log(data);
 });
 
@@ -13,9 +15,10 @@ function init() {
     let dropdownMenu = d3.select("#selDataset");
 
     // Use D3 to get sample names and populate the drop-down selector
-    d3.json(url).then((data) => {
+    d3.json(mongo_endpoint).then((data) => {
         
         // Set a variable for the sample names
+
         let city = data.city;
 
         // Add  samples to dropdown menu
