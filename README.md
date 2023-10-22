@@ -93,7 +93,10 @@ The project is powered by a Python Flask API and includes HTML/CSS, JavaScript, 
     CSS was used to style 
     HTML
     D3 JSON 
+    Pandas
     Python, Jupyter Notebook
+    Plotly
+    Leaflet
     FLASK Application 
     Multiple user-driven interactions: dropdown menu / filters, zoom feature are included in the dashboard
 
