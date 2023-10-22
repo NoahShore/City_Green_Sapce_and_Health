@@ -23,15 +23,14 @@ mongo = PyMongo(app)
 def welcome():
     author = "gabriella, kent, noah, naseema"
     """List all available api routes."""
-    return (
-            "Welcome to Green Spaces and Health"
+    return render_template('index.html', author=author)
             # f"Available Routes:<br/>"
             # f"map<br/>"
             # f"dropdown"
             # f"barcharts"
             # f"bubblechart"
             # f"TopTenCharts"
-        )
+        
 # Route to get data from MongoDB
 #################################################
 # Database Setup
