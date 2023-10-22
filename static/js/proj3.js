@@ -1,10 +1,7 @@
 // Place url in a constant variable
-
 const mongo_endpoint='mongo';
-
 // Fetch the JSON data and console log it
 d3.json(mongo_endpoint).then(function(data) {
-
   console.log(data);
 });
 
@@ -15,18 +12,17 @@ function init() {
     let dropdownMenu = d3.select("#selDataset");
 
     // Use D3 to get sample names and populate the drop-down selector
-    d3.json(mongo_endpoint).then((data) => {
+    d3.json(url).then((data) => {
         
         // Set a variable for the sample names
-
         let city = data.city;
 
         // Add  samples to dropdown menu
         city.forEach((id) => {
 
             dropdownMenu.append("option")
-            .text(city)
-            .property("value",city);
+            .text(id)
+            .property("value",id);
         });
 
         // Set the first sample from the list
@@ -45,16 +41,16 @@ function init() {
 };
 
 // Function that populates metadata info
-function buildMetadata(sample) {
+function buildInfo(sample) {
 
     // Use D3 to retrieve all of the data
-    d3.json(url).then((data) => {
+    d3.json(mongo_endpoint).then((data) => {
 
         // Retrieve all metadata
-        let metadata = data.metadata;
+        let info = data.info;
 
         // Filter based on the value of the sample
-        let value = metadata.filter(result => result.id == sample);
+        let value = buildInfo.filter(result => result.id == sample);
 
         // Log the array of metadata objects after the have been filtered
         console.log(value)
