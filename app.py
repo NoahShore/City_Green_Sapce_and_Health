@@ -24,12 +24,12 @@ def welcome():
     """List all available api routes."""
     return (
             "Welcome to Green Spaces and Health"
-            f"Available Routes:<br/>"
-            f"map<br/>"
-            f"dropdown"
-            f"barcharts"
-            f"bubblechart"
-            f"TopTenCharts"
+            # f"Available Routes:<br/>"
+            # f"map<br/>"
+            # f"dropdown"
+            # f"barcharts"
+            # f"bubblechart"
+            # f"TopTenCharts"
         )
 # Route to get data from MongoDB
 #################################################
