@@ -1,16 +1,15 @@
-#DRAFT TEMPLATE from 10.3 flask activities EXAMPLES
-
-#LEAVE THIS IN HERE import Flask
+#Import dependencies
 from flask import Flask, render_template, jsonify
 from flask_pymongo import PyMongo
 import numpy as np
+
 
 #################################################
 # Flask Setup
 #################################################
 app = Flask(__name__)
 
-app.config["MONGO_URI"] = "mongodb://localhost:27017/green_spaces_and_health"
+app.config["MONGO_URI"] = "mongodb://localhost:27017/green_sapce_and_health"
 
 mongo = PyMongo(app)
 
@@ -22,11 +21,17 @@ mongo = PyMongo(app)
 # Add function below it. 
 @app.route("/")
 def welcome():
+    author = "gabriella, kent, noah, naseema"
+    """List all available api routes."""
     return (
-            "Hello World"
+            "Welcome to Green Spaces and Health"
+            # f"Available Routes:<br/>"
+            # f"map<br/>"
+            # f"dropdown"
+            # f"barcharts"
+            # f"bubblechart"
+            # f"TopTenCharts"
         )
-     #return render_template('index.html')
-
 # Route to get data from MongoDB
 #################################################
 # Database Setup
@@ -36,26 +41,35 @@ def welcome():
 def readMongo():
     data = mongo.db.data.find({}, {'_id': 0, 'city': 1, 'state': 1, 'park_acres': 1,
                                             'percent_of_city_area': 1, 'dv_data_value': 1, 'ob_data_value': 1, 
-                                            'mh_data_value': 1})
+                                            'mh_data_value': 1, 'lat':1, 'lon':1})
     result = []
     for x in data:
         result.append(x)
     print(jsonify(result))
     return jsonify(result)
 
-# First visualization page - map
+# Visualization: Map
 @app.route("/map")
 def map():
+
     return render_template('map.html')
 
-# Second visualization page - bubble chart
+
+# Dropdown Menu 
+@app.route("/dropdown")
+
+
+
+#return render_template('index.html')
+
+# Visualization: Bar Charts
 @app.route("/bar_chart")
 def bar_chart():
     city_data = mongo.db.data.find({}, {'_id': 0, 'cities': 1, 'state': 1, 'park_acres':1})
     result = city_data
     return render_template('bar_chart.html', result=result)
 
-# Third visualization page - pie charts
+#Visualization Bubble Charts
 @app.route("/bubble_chart")
 def bubble_chart():
     bub_data = mongo.db.data.find(
@@ -63,6 +77,7 @@ def bubble_chart():
     result = bub_data
     return render_template('bubble_chart.html', result=result)
 
+<<<<<<< HEAD
 # Third visualization page - pie charts
 @app.route("/line_column")
 def line_column():
@@ -146,27 +161,14 @@ def line_column():
 #         all_passengers.append(passenger_dict)
 
 #     return jsonify(all_passengers)
+=======
+>>>>>>> 4ce4dca52dc40b6697de60b2c6b795f5db61e842
 
 
-# @app.route("/contact")
-# def contact():
-#     email = "peleke@example.com"
 
-#     return f"Questions? Comments? Complaints? Shoot an email to {email}."
 
-# # 4. Define what to do when a user hits the /about route.  print only appears for us in the termina, the return appears for the user.
-# @app.route("/about")
-# def about():
-#     print("Server received request for 'About' page...")
-#     return "Welcome to my 'About' page!"
 
-# @app.route('/data')
-# def data():
-#     shootingData = mongo.db.PoliceShootingData.find({}, {'_id': False})
-#     result = shootingData
-#     return render_template('data.html', result=result)
-
-## LEAVE THIS IN HERE this has to be the very last 2 lines
+## LEAVE THIS IN HERE these are the very last 2 lines
 # End Flask 
 if __name__ == "__main__":
     app.run(debug=True)
