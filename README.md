@@ -6,8 +6,9 @@ Project Group 4 Team Members: Gabriela D. Salazar, Kent Andrews, Noah Shore, Nas
 Please refer to the TECHNICAL DETAILS below for the listing of the Repository Directory Contents.
 
 # Website: 
-Interactive Website with User driven dropdown menu for City selections, Map / Chart visualizations. Pop-ups with statistical data for city selected. 
-To access the website, refer to TECHNICAL DETAILS below for step-by-step instructions.
+Interactive FLASK Website with User driven dropdown menu for City selections, Map / Chart visualizations. Pop-ups with statistical data for city selected. 
+
+To access the website, refer to TECHNICAL DETAILS below in 'INSTRUCTIONS TO RECREATE THE RESULTS AND OPEN THE flask website' for step-by-step instructions.
 
 Creating the Website: Created a website to display our data and the visualizations thereof using HTML, CSS, JavaScript, and Python. Python used to build the Flask app that supports the website and interacts with the MongoDB database on the user's behalf, HTML to create the basic structure of the webpages, and JavaScript to build the visualizations and insert them into the pages. We then used Bootstrap and CSS to style the pages.
   
@@ -20,7 +21,7 @@ Creating the Website: Created a website to display our data and the visualizatio
 ### Project Description: 
 We studied, for year 2017, the number of parks in a city from the Trust for Public (TPL) Land and related it to the specific Health Conditions'statistics documented based on populations in those cities by the Center of Disease Control and Prevention (CDC).  
 
-Created an interactive Website with visual representations of our data findings. 
+Created an interactive Flask website with visual representations of our data findings. 
     1. For example User can select a 'city' from the list of cities in the DROPDOWN MENU. 
     2. This will reveal in the INFORMATION BOX, the particulars pertaining to the selected city: City, City Park Score Rank, Obesity Value, Mental Health Value, Dr. Visits for Routine Checkup Value, coordinates of the city, Percentage of City Park Acerage.  
     3. Selected city visualizations will display to display the Obesity Value, Mental Health Value and the Dr. Visits Value. 
@@ -155,20 +156,19 @@ Loading: After data was cleaned and transformed, it was loaded into MongoDB usin
 
 Tables: For testing purposes, master_table.csv and master_table.json created with all the needed data. 
 
-## INSTRUCTIONS TO RECREATE THE RESULTS:
-Before running the Jupyter Notebook files, ensure that your environment can use the following Python packages:
+## INSTRUCTIONS TO RECREATE THE RESULTS AND OPEN THE flask website:
+    Before running the Jupyter Notebook files, ensure that your environment can use the following Python packages:
     Flask, 
     Pandas, 
     requests, and 
     Pymongo. 
-You must also have MongoDB installed on your computer to proceed.
-
-Clone the repo.
-Ensure that your environment is compatible with the dependencies specified in the first code cell of the Juptyer Notebook.
-Run the cells of the Jupyter Notebook, in order. This will import the raw data, refine and clean it, and create and populate the database in MongoDB.
-Close the Jupyter Notebook, and end the Jupyter Notebook session.
-On the command line, open app.py using Python.
-Open a new tab or window in Google Chrome, and navigate to the address specified in the terminal window (typically, this is 127.0.0.1:5000). This should open the Flask website on the index page.
+    You must also have MongoDB installed on your computer to proceed.
+    Clone the repo.
+    Ensure that your environment is compatible with the dependencies specified in the first code cell of the Juptyer Notebook.
+    Run the cells of the Jupyter Notebook, in order. This will import the raw data, refine and clean it, and create and populate the database in MongoDB.
+    Close the Jupyter Notebook, and end the Jupyter Notebook session.
+    On the command line, open app.py using Python.
+    Open a new tab or window in Google Chrome, and navigate to the address specified in the terminal window (typically, this is 127.0.0.1:5000). This should open the Flask website on the index page.
 Use the navigation bar and links to visit the different pages of the website.
 
 # Acknowledgements: 
