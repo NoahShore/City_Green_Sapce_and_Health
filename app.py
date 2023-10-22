@@ -3,6 +3,7 @@ from flask import Flask, render_template, jsonify
 from flask_pymongo import PyMongo
 import numpy as np
 
+
 #################################################
 # Flask Setup
 #################################################
@@ -46,8 +47,6 @@ def readMongo():
         result.append(x)
     print(jsonify(result))
     return jsonify(result)
-
-
 
 # Visualization: Map
 @app.route("/map")
