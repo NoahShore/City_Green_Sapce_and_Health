@@ -3,7 +3,15 @@ const mongo_endpoint='mongo';
 // Fetch the JSON data and console log it
 d3.json(mongo_endpoint).then(function(data) {
   console.log(data);
-});
+
+
+
+// let cities = []
+
+// for (let i = 0; i < data.length; i++) {
+//     cities.push(data[i].city);
+//   }
+// console.log(cities);
 
 // Initialize the dashboard at start up 
 function init() {
@@ -12,30 +20,30 @@ function init() {
     let dropdownMenu = d3.select("#selDataset");
 
     // Use D3 to get sample names and populate the drop-down selector
-    d3.json(url).then((data) => {
+    d3.json(mongo_endpoint).then((data) => {
         
         // Set a variable for the sample names
-        let city = data.city;
-
+        let city_name = data.city;
+        console.log(city_name);
         // Add  samples to dropdown menu
-        city.forEach((id) => {
+        cities.forEach((city) => {
 
             dropdownMenu.append("option")
-            .text(id)
-            .property("value",id);
+            .text(cities.city)
+            .property("value",city);
         });
 
         // Set the first sample from the list
-        let sample_one = city[0];
+        let sample_one = cities[0];
 
         // Log the value of sample_one
         console.log(sample_one);
 
-        // Build the initial plots
-        buildMetadata(sample_one);
-        buildBarChart(sample_one);
-        buildBubbleChart(sample_one);
-        buildGaugeChart(sample_one);
+        // // Build the initial plots
+        // buildMetadata(sample_one);
+        // buildBarChart(sample_one);
+        // buildBubbleChart(sample_one);
+        // buildGaugeChart(sample_one);
 
     });
 };
@@ -119,3 +127,4 @@ function buildBarChart(sample) {
         Plotly.newPlot("bar", [trace], layout)
     });
 };
+});
