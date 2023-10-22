@@ -63,6 +63,14 @@ def bubble_chart():
     result = bub_data
     return render_template('bubble_chart.html', result=result)
 
+# Third visualization page - pie charts
+@app.route("/line_column")
+def line_column():
+    bub_data = mongo.db.data.find(
+        {}, {'_id': 0, 'cities': 1, 'state': 1, 'ob_data_value': 1})
+    result = bub_data
+    return render_template('line_column.html', result=result)
+
 # @app.route("/about")
 # def about():
 

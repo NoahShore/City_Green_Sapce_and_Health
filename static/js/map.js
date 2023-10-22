@@ -1,6 +1,9 @@
 // Store our API endpoint as queryUrl. USED THE .JSON BUT NEED THE LAT AND LONG
 // or //const url = "mongodb://localhost:8000/green_space_and_health"
-const city_url = "master-table.json"
+const mongo_endpoint='mongo';
+
+d3.json(mongo_endpoint).then(function(data) {
+  console.log(data);
 
 //Create our map, set Kansas City Airport MCI as midpint mid continent.coordinates obtained from airnav.com/airports. 
 let myMap = L.map("map", {
@@ -103,4 +106,5 @@ legend.onAdd = function () {
 // Add legend to map
 legend.addTo(myMap);
 });
-    
+
+});

@@ -8,18 +8,26 @@ d3.json(mongo_endpoint).then(function(data) {
 
 console.log(data.length)
 
-let list = []      
+listx = []
+
+let listy = []      
 
 for (let i = 0; i < data.length; i++) {
-    list.push(data[i].ob_data_value)
+    listy.push(data[i].ob_data_value)
 };
 
-console.log(list)
+for (let i = 0; i < data.length; i++) {
+    listx.push(data[i].city)
+};
+
+console.log(listx)
+
+console.log(listy)
 
 var options = {
     series: [{
     name: 'Bubble',
-    data: list,
+    data: data
   }],
     chart: {
       type: 'bubble',
@@ -31,7 +39,7 @@ var options = {
       text: 'Obesity Data by City'
   },
   xaxis: {
-      tickAmount: 95,
+      tickAmount: 50,
       type: 'category',
   },
   yaxis: {
