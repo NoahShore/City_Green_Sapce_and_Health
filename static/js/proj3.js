@@ -8,9 +8,9 @@ d3.json(mongo_endpoint).then(function(data) {
 
 let cities = []
 
-for (let i = 0; i < data.length; i++) {
-    cities.push(city: data[i].city);
-  }
+ for (let i = 0; i < data.length; i++) {
+     cities.push(data[i].city);
+   }
 console.log(cities);
 
 // Initialize the dashboard at start up 
@@ -23,6 +23,7 @@ function init() {
         console.log(data)
         
         // Set a variable for the sample names
+<<<<<<< HEAD
         let city_name = data.city;
     
         // Add  samples to dropdown menu
@@ -85,7 +86,7 @@ function demoInfo(city_name) {
 function buildBarChart(sample) {
 
     // Use D3 to retrieve all of the data
-    d3.json(url).then((data) => {
+    d3.json(city_data).then((data) => {
 
         // Retrieve all sample data
         let sampleInfo = data.samples;
