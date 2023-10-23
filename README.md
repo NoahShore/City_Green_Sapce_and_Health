@@ -29,11 +29,6 @@ Created an interactive Flask website with visual representations of our data fin
     4. Landing Page Map of the 95 cities with city parks and specific health data.  The size and color of the circle marker for each city corresponds to it Percentage of City Park Acerage. 
     5. Various Chart Visualizations of the Top 10 cities i.e. cities with the highest Percentage of City Park Acrerage. 
 
-Define the CDC 'Value': 
-Define the 'Park Score Rank':
-Define Percentage of City Park Acerage: 
-Total Acerage: Total City-Park area in the city. 
-
 Hypothesis: Cities ranking higher in city green spaces have a lower:
 1.	obesity rate, 
 2.	mental health conditions, and 
@@ -59,7 +54,7 @@ brief story of visualization.
 Visualization pictures are located in the 'images' folder. 
 
 ### CONCLUSION:
-
+From the visualizations it appears that there is little to no correlation between the acreage of city parks and the overall health of populations
 
 ### NEXT STEPS: 
 Visit green spaces more often for various activities: Walks, bike rides, lunches / picnics, reading, meditations, etc. 

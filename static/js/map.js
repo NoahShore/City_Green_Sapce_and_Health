@@ -28,7 +28,22 @@ d3.json(mongo_endpoint).then(function(data) {
 let geoData = data.map(noah2GeoJSON);
   console.log(geoData)
 
+// Make a list to hold each data value
+  let lat = [];
+  let lon = [];
+  let city = [];
+  let state = [];
+  let percentage_of_city_area = [];
 
+
+// Attach data to the markers for the map
+  for (let i = 1; i < data.length; i++){    
+    lat[i] = [data[i]['lat']]
+    lon[i] = [data[i]['lon']]
+    city[i] = [data[i]['city']]
+    state[i] = [data[i]['state']]
+    percentage_of_city_area[i] = [data[i]['percent_of_city_area']]
+  };
 //Create our map, set Kansas City Airport MCI as midpint mid continent.coordinates obtained from airnav.com/airports. 
 let myMap = L.map("map", {
   center: {lat: 39.2976111, lng:-94.7138889},
@@ -43,13 +58,15 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   // Create the empty marker layer for the marker clusters
 let markers = L.markerClusterGroup();
 
-for (let j = 1; j < metadata.length; j++) {
+let metaData =[]
+
+for (let j = 1; j < geoData.length; j++) {
   // Create an HTML string to populate the marker popup. The string uses an HTML description list to create heading-value pairs.
-  metadata[j] = ("<dl><dt>City</dt><dd>" + String(city[j]) + "</dd><dt>State</dt><dd>" + String(state[j]) + 
+  metaData[j] = ("<dl><dt>City</dt><dd>" + String(city[j]) + "</dd><dt>State</dt><dd>" + String(state[j]) + 
   "</dd><dt>Percentage_of_Park_Area</dt><dd>" + String(percentage_of_city_area[j]) + "</dd><dt>Latitude</dt><dd>" + String(lat[j])
-  + "</dd><dt>Longitude</dt><dd>" + String(long[j]) + "</dd></dl>");
+  + "</dd><dt>Longitude</dt><dd>" + String(lon[j]) + "</dd></dl>");
   // Create a marker for the given location and attach the metadata as a popup. Add the marker to the marker cluster layer.
-  markers.addLayer((L.marker([lat[j][0], lng[j][0]])).bindPopup(metadata[j]));
+  markers.addLayer((L.marker([lat[j][0], lon[j][0]])).bindPopup(metaData[j]));
 };
 
 // Add the layer with the marker clusters to the map
@@ -85,55 +102,6 @@ legend.addTo(myMap);
 });
 
 
-// // marker color for different fill color for percent_of_city_area index [4] x = Percentage_of_city_area
-// function markerColor(x) {
-//   switch (true) {
-//   case x > 80:
-//     return '#194d00';
-//   case x  > 50:
-//     return '#2a8000';
-//   case x > 25:
-//       return '#3bb300';
-//   case x > 20:
-//       return '#4ce600';
-//   case x > 15:
-//       return '#66ff1a';
-//   case x > 10:
-//     return '#aaff80';
-//   case x > 5:
-//     return '#ccffb3';
-//   case x > 2:
-//     return '#eeffe6';
-//   default:   // anything <2
-//     return '#ffff99';
-//   }
-// }
 
-// // create circle markers based on radius of Percentage_of_city_area; color #000000 is black for around the circle. 
-// // The percentage of city area indicated by the size of the circle. Cities with higher percentage appear larger.
-//   function createMarker(feature, geoData) {
-//     return L.circleMarker(geoData, {
-//         opacity: 1,
-//         fillOpacity: 1,
-//         fillColor: markerColor(feature.properties.percentage_of_city_area),
-//         radius: feature.properties.percentage_of_city_area *3,
-//         color: "#000",
-//         weight: 0.5
-//       });
-//     }
-
-// //add data to map.  data is all the features. 
-//   L.geoJson(geoData, {
-//   pointToLayer: createMarker,
-
-// //add pop up for each city on map. Define a function that runs once for each data in the data array. 
-// // display in pop up the city, state, percentage_of_city_area, lat, long.   
-  
-//   onEachFeature: function (feature, layer) {
-
-//     layer.bindPopup(`<h3>Location: ${feature.properties.city},${feature.properties.state}</h3><hr><p>Percentage_of_park_area: ${feature.properties.percentage_of_city_area}
-//     </p><p>Coordinates: ${feature.geometry[1]},${feature.geometry[0]}</p>`);
-//   }
-//   }).addTo(myMap);
 
 
