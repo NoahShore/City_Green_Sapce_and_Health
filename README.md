@@ -6,11 +6,11 @@ Project Group 4 Team Members: Gabriela D. Salazar, Kent Andrews, Noah Shore, Nas
 Please refer to the TECHNICAL DETAILS below for the listing of the Repository Directory Contents.
 
 # Website: 
-Interactive FLASK Website with User driven dropdown menu for City selections, Map / Chart visualizations. Pop-ups with statistical data for city selected. 
+Interactive FLASK Website with a User-driven dropdown menu for City selections and map / Chart visualizations. Pop-ups with statistical data for the city selected. 
 
 To access the website, refer to TECHNICAL DETAILS below in 'INSTRUCTIONS TO RECREATE THE RESULTS AND OPEN THE flask website' for step-by-step instructions.
 
-Creating the Website: Created a website to display our data and the visualizations thereof using HTML, CSS, JavaScript, and Python. Python used to build the Flask app that supports the website and interacts with the MongoDB database on the user's behalf, HTML to create the basic structure of the webpages, and JavaScript to build the visualizations and insert them into the pages. We then used Bootstrap and CSS to style the pages.
+Creating the Website: Created a website to display our data and the visualizations thereof using HTML, CSS, JavaScript, and Python. Python is used to build the Flask app that supports the website and interacts with the MongoDB database on the user's behalf, HTML is used to create the basic structure of the webpages, and JavaScript is used to build the visualizations and insert them into the pages. We then used Bootstrap and CSS to style the pages.
   
 ## PROJECT OVERVIEW / STORY
 ### Hypothesis: Cities ranking higher in city green spaces have a lower:
@@ -19,15 +19,15 @@ Creating the Website: Created a website to display our data and the visualizatio
         3.	adhere to regular health check-ups. 
 
 ### Project Description: 
-We studied, for year 2017, the number of parks in a city from the Trust for Public (TPL) Land and related it to the specific Health Conditions'statistics documented based on populations in those cities by the Center of Disease Control and Prevention (CDC).  
+We studied, for the year 2017, the number of parks in a city from the Trust for Public (TPL) Land and related it to the specific Health Conditions statistics documented based on populations in those cities by the Center of Disease Control and Prevention (CDC).  
 
 Created an interactive Flask website with visual representations of our data findings. 
     1. For example User can select a 'city' from the list of cities in the DROPDOWN MENU. 
     2. This will reveal in the INFORMATION BOX, the particulars pertaining to the selected city: City, City Park Score Rank, Obesity Value, Mental Health Value, Dr. Visits for Routine Checkup Value, coordinates of the city, Percentage of City Park Acerage.  
-    3. Selected city visualizations will display to display the Obesity Value, Mental Health Value and the Dr. Visits Value. 
+    3. Selected city visualizations will display the Obesity Value, Mental Health Value, and the Dr. Visits Value. 
     Bar Charts, Bubble Charts. 
-    4. Landing Page Map of the 95 cities with city park and specific health data.  The size and color of the circle marker for each city corresponds to it Percentage of City Park Acerage. 
-    5. Various Chart Visualizations of the Top 10 cities i.e. cities with the highest Percentage of City Park Acerage. 
+    4. Landing Page Map of the 95 cities with city parks and specific health data.  The size and color of the circle marker for each city corresponds to it Percentage of City Park Acerage. 
+    5. Various Chart Visualizations of the Top 10 cities i.e. cities with the highest Percentage of City Park Acrerage. 
 
 Define the CDC 'Value': 
 Define the 'Park Score Rank':
@@ -40,7 +40,7 @@ Hypothesis: Cities ranking higher in city green spaces have a lower:
 3.	adhere to regular health check-ups. 
 
 ### Study: 
-        Based for Year 2017 data
+        Based on Year 2017 data
         Explored 100 USA Cities
         For Health conditions:
             Obesity. Age Group Adults >=18 years
@@ -48,14 +48,14 @@ Hypothesis: Cities ranking higher in city green spaces have a lower:
             Visits to Doctor for Routine Check-ups.  Age Group Adults >=18 years
 
 ### Assumptions:
-        Assumptions: Healthier populations use the city parks more perhaps due to conveniance, work schedules, lifestyles, safer environments, their ages, ......
+        Assumptions: Healthier populations use the city parks more perhaps due to convenience, work schedules, lifestyles, safer environments, their ages, ......
         We did not look at whether the number of city parks was in proportion to the size of the city and its population. 
         We do not know how many people actually visited any of the city parks. 
 
 ### Summary: 
 
 ### Visualizations. Paste visualizations here ......
-brief story of visualization..
+brief story of visualization.
 Visualization pictures are located in the 'images' folder. 
 
 ### CONCLUSION:
@@ -66,25 +66,26 @@ Visit green spaces more often for various activities: Walks, bike rides, lunches
 
 Visit your care provider for your wellness and health routine check-ups
 
-Business can implement more wellness or within their wellness / incentive program offerings to encourage employees/families to enjoy green spaces
+Businesses can implement more wellness or within their wellness / incentive program offerings to encourage employees/families to enjoy green spaces
 
-City or State Parks could develop apps for personal tracking of park visits to encourage more people to make the effort, and track their activities (fitness measures) specifically completed oon park grounds.  
+City or State Parks could develop apps for personal tracking of park visits to encourage more people to make the effort and track their activities (fitness measures) specifically completed on park grounds.  
 
 Parks could gather counts of active app users to leverage getting more funding/grants for parks, and educational, wellness programs in the parks. 
 
-Further research / analysis is needed on the density of the city compared to the number of city parks, counts of visits to the park, geographical locations income level of neighbourhoods,
+Further research / analysis is needed on the density of the city compared to the number of city parks, counts of visits to the park, geographical locations income level of neighborhoods,
 
 ## TECHNICAL DETAILS: 
 The aim of this project is to combine the skills acquired in different programming languages and storytelling skills to create an interactive dashboard. The dashboard includes different visualizations representing the data gathered, cleaned, and analyzed to illustrate the impacts of health as it relates to available and accessible outdoor green spaces.
 
-The project is powered by a Python Flask API and includes HTML/CSS, JavaScript, SQL database. 
+The project is powered by a Python Flask API and includes HTML/CSS, JavaScript, and SQL database. 
 
 ## Access the WEBPAGE using the Flask Application:
     1. Find in the folder 'Data' the 'mongo_setup.ipynb' code file.
     2. Run the mongo_setup.ipynb code file.
-    3. Run the 'app.py' code file located in the main directory 'City_Green_Space_and_Health' to get to the Webpage.
-    4. Enjoy and Thank you for visiting our WebPage. 
-    Note: programs needed for this: Flask Application, Flask-PyMongo, Python, Jupyter Notebook.  
+    3. Run the 'app.py' code file located in the main directory 'City_Green_Space_and_Health' to get to the web page.
+    4. Enjoy and Thank you for visiting our web page. 
+    Note: Programs needed for this: Flask Application, Flask-PyMongo, Python, Jupyter Notebook.  
+          Only run the mongo_setup code once to avoid duplicates in the data.
 
 ### Programs Used
     SQLAlchemy was used to clean the datasets
@@ -98,6 +99,7 @@ The project is powered by a Python Flask API and includes HTML/CSS, JavaScript, 
     Python, Jupyter Notebook
     Plotly
     Leaflet
+    Apexchart (new library for the scatter plot)
     FLASK Application 
     Multiple user-driven interactions: dropdown menu / filters, zoom feature are included in the dashboard
 
@@ -122,9 +124,9 @@ Main Directory name:  'City_Green_Space_and_Health/ with:
 1.	TPL public data 
     Green Spaces (City Parks): https://www.tpl.org/park-data-downloads
 
-    City Parks Data for year 2017: https://parkserve.tpl.org/downloads/historic/2017_ParkScoreRank.pdf
+    City Parks Data for the year 2017: https://parkserve.tpl.org/downloads/historic/2017_ParkScoreRank.pdf
 
-    The parks data downloadable zip file contains excel sheets with the acreage data that we will be using.
+    The parks data downloadable zip file contains Excel sheets with the acreage data that we will be using.
 
     State data for each city in the City Parks: https://www.tpl.org/2023-city-park-facts This file has the City and State data.  
     The State data from this file was added to the Cities Acreage Data for our analysis. 
@@ -140,21 +142,21 @@ Main Directory name:  'City_Green_Space_and_Health/ with:
 
 
 ## Data Limitations: 
-Rank and Score provided in data was used. The actual population size unknown. 
+Rank and Score provided in the data were used. The actual population size is unknown. 
 
 
 ## PROCESS & ANALYSIS: 
-### Extraction, Transformation and Loading 
-Extraction: Pandas to access and read in the raw data from the CSV file. Raw Source Data files located in 'a500_cities_data', 'City Park Facts', 'csv_outputs'. 
+### Extraction, Transformation, and Loading 
+Extraction: Pandas to access and read the raw data from the CSV file. Raw Source Data files are located in 'a500_cities_data', 'City Park Facts', and 'csv_outputs'. 
 <!-- insert file of raw coordinates data file  -->
 
 Transformation: Data cleansing: cleaned the data using Pandas in a Jupyter Notebook. Retained needed data from source data. 
-Cleaned data files located in: Data directory. '500_cities_data_sort.ipynb', 'city_park_data_sort.ipynb'. coords_cleaning.ipynb. 
+Cleaned data files located in the Data directory. '500_cities_data_sort.ipynb', 'city_park_data_sort.ipynb'. coords_cleaning.ipynb. 
 
-Loading: After data was cleaned and transformed, it was loaded into MongoDB using Pymongo. Data joins using City and State Keys.
-'Mongo_setup.ipynb' database set up file. 
+Loading: After the data was cleaned and transformed, it was loaded into MongoDB using Pymongo. Data joins using City and State Keys.
+'Mongo_setup.ipynb' database setup file. 
 
-Tables: For testing purposes, master_table.csv and master_table.json created with all the needed data. 
+Tables: For testing purposes, master_table.csv and master_table.json were created with all the needed data. 
 
 ## INSTRUCTIONS TO RECREATE THE RESULTS AND OPEN THE flask website:
     Before running the Jupyter Notebook files, ensure that your environment can use the following Python packages:
