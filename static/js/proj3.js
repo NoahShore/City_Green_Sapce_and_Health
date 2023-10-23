@@ -6,31 +6,30 @@ d3.json(mongo_endpoint).then(function(data) {
 
 
 
-// let cities = []
+let cities = []
 
-// for (let i = 0; i < data.length; i++) {
-//     cities.push(data[i].city);
-//   }
-// console.log(cities);
+for (let i = 0; i < data.length; i++) {
+    cities.push(city: data[i].city);
+  }
+console.log(cities);
 
 // Initialize the dashboard at start up 
 function init() {
-
     // Use D3 to select the dropdown menu
     let dropdownMenu = d3.select("#selDataset");
 
     // Use D3 to get sample names and populate the drop-down selector
     d3.json(mongo_endpoint).then((data) => {
+        console.log(data)
         
         // Set a variable for the sample names
         let city_name = data.city;
-        console.log(city_name);
+    
         // Add  samples to dropdown menu
-        cities.forEach((city) => {
-
+        data.city.forEach(function(city_name) {
             dropdownMenu.append("option")
-            .text(cities.city)
-            .property("value",city);
+            .text(city_name)
+            .property("value",city_name);
         });
 
         // Set the first sample from the list
@@ -49,13 +48,14 @@ function init() {
 };
 
 // Function that populates metadata info
-function buildInfo(sample) {
+function demoInfo(city_name) {
 
     // Use D3 to retrieve all of the data
     d3.json(mongo_endpoint).then((data) => {
 
         // Retrieve all metadata
-        let info = data.info;
+        let info = data;
+        console.log(data)
 
         // Filter based on the value of the sample
         let value = buildInfo.filter(result => result.id == sample);

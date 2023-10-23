@@ -69,19 +69,19 @@ def bar_chart():
     return render_template('bar_chart.html', result=result)
 
 #Visualization Bubble Charts
-@app.route("/bubble_chart")
+@app.route("/scatter_plot")
 def bubble_chart():
     bub_data = mongo.db.green_spaces_and_health3.find(
         {}, {'_id': 0, 'cities': 1, 'state': 1, 'ob_data_value': 1})
     result = bub_data
-    return render_template('bubble_chart.html', result=result)
+    return render_template('scatter_plot.html', result=result)
 
 # Third visualization page - pie charts
 @app.route("/line_column")
 def line_column():
-    bub_data = mongo.db.green_spaces_and_health3.find(
+    line_data = mongo.db.green_spaces_and_health3.find(
         {}, {'_id': 0, 'cities': 1, 'state': 1, 'ob_data_value': 1})
-    result = bub_data
+    result = line_data
     return render_template('line_column.html', result=result)
 
 ## LEAVE THIS IN HERE these are the very last 2 lines
