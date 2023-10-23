@@ -10,6 +10,14 @@ Interactive FLASK Website with a User-driven dropdown menu for City selections a
 
 To access the website, refer to TECHNICAL DETAILS below in 'INSTRUCTIONS TO RECREATE THE RESULTS AND OPEN THE flask website' for step-by-step instructions.
 
+## Access the WEBPAGE using the Flask Application:
+    1. Find in the folder 'Data' the 'mongo_setup.ipynb' code file.
+    2. Run the mongo_setup.ipynb code file.
+    3. Run the 'app.py' code file located in the main directory 'City_Green_Space_and_Health' to get to the web page.
+    4. Enjoy and Thank you for visiting our web page. 
+    Note: Programs needed for this: Flask Application, Flask-PyMongo, Python, Jupyter Notebook.  
+          Only run the mongo_setup code once to avoid duplicates in the data.
+
 Creating the Website: Created a website to display our data and the visualizations thereof using HTML, CSS, JavaScript, and Python. Python is used to build the Flask app that supports the website and interacts with the MongoDB database on the user's behalf, HTML is used to create the basic structure of the webpages, and JavaScript is used to build the visualizations and insert them into the pages. We then used Bootstrap and CSS to style the pages.
   
 ## PROJECT OVERVIEW / STORY
@@ -46,8 +54,6 @@ Hypothesis: Cities ranking higher in city green spaces have a lower:
         Assumptions: Healthier populations use the city parks more perhaps due to convenience, work schedules, lifestyles, safer environments, their ages, ......
         We did not look at whether the number of city parks was in proportion to the size of the city and its population. 
         We do not know how many people actually visited any of the city parks. 
-
-### Summary: 
 
 ### Visualizations. Paste visualizations here ......
 brief story of visualization.
@@ -133,7 +139,7 @@ Main Directory name:  'City_Green_Space_and_Health/ with:
 
     Mental Health: https://data.cdc.gov/500-Cities-Places/500-Cities-Mental-health-not-good-for-14-days-amon/i2ek-k3pa
 
-3. Coordinates of the City,State from: https://
+3. Coordinates of the City,State from: https://simplemaps.com/data/us-cities
 
 
 ## Data Limitations: 
