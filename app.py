@@ -23,7 +23,7 @@ mongo = PyMongo(app)
 def welcome():
     author = "gabriella, kent, noah, naseema"
     """List all available api routes."""
-    return render_template('index.html', author=author)
+    return render_template('home.html', author=author)
             # f"Available Routes:<br/>"
             # f"map<br/>"
             # f"dropdown"

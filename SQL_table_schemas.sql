@@ -49,8 +49,30 @@ CREATE TABLE master_table AS
 	FROM pd_dv_table pdt
 	LEFT JOIN mh_ob_table mot on pdt.city = mot.city	AND pdt.state = mot.state
 	ORDER BY pdt.city;
-	
+
 DELETE FROM master_table 
 WHERE COALESCE (dv_data_value, ob_data_value, mh_data_value ) IS NULL;
 
 SELECT * FROM master_table;
+
+CREATE TABLE coords (
+	city VARCHAR(100) NOT NULL,
+	state VARCHAR(5) NOT NULL,
+	lat NUMERIC NOT NULL,
+	lon NUMERIC NOT NULL
+);
+
+SELECT * FROM coords;
+
+CREATE TABLE master_and_coords AS (
+	SELECT mt.city, mt.state, mt.park_acres, mt.percent_of_city_area, mt.dv_data_value, mt.ob_data_value, mt.mh_data_value, cd.lat, cd.lon
+	FROM coords cd
+	LEFT JOIN master_table mt on mt.city = cd.city	AND mt.state = cd.state
+	ORDER BY mt.city
+		
+);
+
+DELETE FROM master_and_coords 
+WHERE COALESCE (dv_data_value, ob_data_value, mh_data_value ) IS NULL;
+
+SELECT * FROM master_and_coords;
