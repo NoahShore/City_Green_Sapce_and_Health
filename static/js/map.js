@@ -53,20 +53,14 @@ d3.json(mongo_endpoint).then(function(data) {
         weight: 0.5
       });
     }
-//add data to map
-    // L.geoJson(data, {
-    // pointToLayer: createMarker,
-
-    //add data to map
+  //add data to map
     L.geoJson(data, {
     pointToLayer: createMarker,
 
     //add pop up for each city on map. Define a function that runs once for each data in the data array. 
     // display in pop up the city, state, percentage_of_city_area, lat, long.   
-   
-    // onEachFeature: function (data, layer) {
-
-    onEachFeature: function (data, layer) {
+  
+      onEachFeature: function (data, layer) {
 
       layer.bindPopup(`<h3>Location: ${data.city},${data.state}</h3><hr><p>Percentage_of_park_area: ${data.percentage_of_city_area}
       </p><p>Coordinates: ${data.lat},${data.lon}</p>`);
@@ -102,5 +96,3 @@ legend.onAdd = function () {
 legend.addTo(myMap);
 
 });
-
-
