@@ -23,7 +23,7 @@ function init() {
         console.log(data)
         
         // Set a variable for the sample names
-<<<<<<< HEAD
+
         let city_name = data.city;
     
         // Add  samples to dropdown menu
