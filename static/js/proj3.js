@@ -6,12 +6,12 @@ d3.json(mongo_endpoint).then(function(data) {
 
 
 
-// let cities = []
+let cities = []
 
-// for (let i = 0; i < data.length; i++) {
-//     cities.push(data[i].city);
-//   }
-// console.log(cities);
+ for (let i = 0; i < data.length; i++) {
+     cities.push(data[i].city);
+   }
+console.log(cities);
 
 // Initialize the dashboard at start up 
 function init() {
@@ -23,27 +23,30 @@ function init() {
     d3.json(mongo_endpoint).then((data) => {
         
         // Set a variable for the sample names
-        let city_name = data.city;
-        console.log(city_name);
+        let names = data.names;
+
         // Add  samples to dropdown menu
-        cities.forEach((city) => {
+        names.forEach((id) => {
+
+            // Log the value of id for each iteration of the loop
+            console.log(id);
 
             dropdownMenu.append("option")
-            .text(cities.city)
-            .property("value",city);
+            .text(id)
+            .property("value",id);
         });
 
         // Set the first sample from the list
-        let sample_one = cities[0];
+        let sample_one = names[0];
 
         // Log the value of sample_one
         console.log(sample_one);
 
         // // Build the initial plots
-        // buildMetadata(sample_one);
-        // buildBarChart(sample_one);
-        // buildBubbleChart(sample_one);
-        // buildGaugeChart(sample_one);
+        buildMetadata(sample_one);
+        buildBarChart(sample_one);
+        buildBubbleChart(sample_one);
+        buildGaugeChart(sample_one);
 
     });
 };
@@ -52,7 +55,7 @@ function init() {
 function buildInfo(sample) {
 
     // Use D3 to retrieve all of the data
-    d3.json(mongo_endpoint).then((data) => {
+    d3.json(url).then((data) => {
 
         // Retrieve all metadata
         let info = data.info;
@@ -85,7 +88,7 @@ function buildInfo(sample) {
 function buildBarChart(sample) {
 
     // Use D3 to retrieve all of the data
-    d3.json(url).then((data) => {
+    d3.json(city_data).then((data) => {
 
         // Retrieve all sample data
         let sampleInfo = data.samples;
