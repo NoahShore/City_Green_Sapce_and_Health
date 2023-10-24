@@ -5,6 +5,9 @@ Project Group 4 Team Members: Gabriela D. Salazar, Kent Andrews, Noah Shore, Nas
 # GitHub Repository: https://github.com/NoahShore/City_Green_Sapce_and_Health 
 Please refer to the TECHNICAL DETAILS below for the listing of the Repository Directory Contents.
 
+# link to Presentation Slides: https://drive.google.com/drive/folders/1O8KciX3Mv4CMJ-GINdosS46Rzd8cVeJ-?usp=sharing
+
+
 # Website: 
 Interactive Python powered FLASK API Website. Navigate links to visit pages: Home, Bar Chart, Map, or Scatter Plot. 
 Click on a city in the map to view more information. Click on the scatter plot to view health values.   
