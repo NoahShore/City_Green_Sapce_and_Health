@@ -87,37 +87,32 @@ The project is powered by a Python Flask API and includes HTML/CSS, JavaScript, 
 
 ## Data Directories: 
 Main Directory name:  'City_Green_Space_and_Health/  key contents: 
-    a500_cities_data
-    city_park_data
-    csv_outputs
-    README
-    app.py
-    Presentation slides
-    Data: MongoDb: mongo_setup.ipynb, 500_cities_data_sort.ipynb, city_park_data_sort.ipynb, coords_cleaning.ipynb
-    master_table_and_coords.csv
-    master_table.json
-    SQL_table_schema
-    static: /js bar_chart.js, map.js, scatter_plot.js
-    static: /css mapstyle.css
-    templates: html files: home.html, bar_chart.html, scatter_plot.html, map.html
-    images:pictures 
+        a500_cities_data
+        city_park_data
+        csv_outputs
+        README
+        app.py
+        Presentation slides
+        Data: MongoDb: mongo_setup.ipynb, 500_cities_data_sort.ipynb, city_park_data_sort.ipynb, coords_cleaning.ipynb
+        master_table_and_coords.csv
+        master_table.json
+        SQL_table_schema
+        static: /js bar_chart.js, map.js, scatter_plot.js
+        static: /css mapstyle.css
+        templates: html files: home.html, bar_chart.html, scatter_plot.html, map.html
+        images:pictures 
 
 ## Datasets Selected / Source: 
 1.	TPL public data 
     Green Spaces (City Parks): https://www.tpl.org/park-data-downloads
-
     City Parks Data for the year 2017: https://parkserve.tpl.org/downloads/historic/2017_ParkScoreRank.pdf
-
     The parks data downloadable zip file contains Excel sheets with the acreage data that we will be using.
-
     State data for each city in the City Parks: https://www.tpl.org/2023-city-park-facts This file has the City and State data.  
     The State data from this file was added to the Cities Acreage Data for our analysis. 
 
 2. CDC public data 
     Doctor Visits for routine checkup:  https://data.cdc.gov/500-Cities-Places/500-Cities-Visits-to-doctor-for-routine-checkup-wi/2q6t-jyye
-
     Obesity: https://data.cdc.gov/500-Cities-Places/500-Cities-Obesity-among-adults-aged-18-years/bjvu-3y7d
-
     Mental Health: https://data.cdc.gov/500-Cities-Places/500-Cities-Mental-health-not-good-for-14-days-amon/i2ek-k3pa
 
 3. Coordinates of the City,State from: https://simplemaps.com/data/us-cities
