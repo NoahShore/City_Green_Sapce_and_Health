@@ -1,4 +1,4 @@
-# City Green Space and Health: Obesity, Metal Health, Dr. visits for routine check-ups                       Updated 10/19/2023
+# City Green Space and Health: Obesity, Metal Health, Dr. visits for routine check-ups                      
 ## BootCamp: Data Visualization and Data Analytics Course Project 3, Group 4 
 Project Group 4 Team Members: Gabriela D. Salazar, Kent Andrews, Noah Shore, Naseema Omer 
 
@@ -6,41 +6,31 @@ Project Group 4 Team Members: Gabriela D. Salazar, Kent Andrews, Noah Shore, Nas
 Please refer to the TECHNICAL DETAILS below for the listing of the Repository Directory Contents.
 
 # Website: 
-Interactive FLASK Website with a User-driven dropdown menu for City selections and map / Chart visualizations. Pop-ups with statistical data for the city selected. 
+Interactive Python powered FLASK API Website. Navigate links to visit pages: Home, Bar Chart, Map, or Scatter Plot. 
+Click on a city in the map to view more information. Click on the scatter plot to view health values.   
 
-To access the website, refer to TECHNICAL DETAILS below in 'INSTRUCTIONS TO RECREATE THE RESULTS AND OPEN THE flask website' for step-by-step instructions.
+To access the website, see the TECHNICAL DETAILS below in 'INSTRUCTIONS TO RECREATE THE RESULTS, and TO ACCESS THE FLASK API WEBSITE.
 
-## Access the WEBPAGE using the Flask Application:
-    1. Find in the folder 'Data' the 'mongo_setup.ipynb' code file.
-    2. Run the mongo_setup.ipynb code file.
-    3. Run the 'app.py' code file located in the main directory 'City_Green_Space_and_Health' to get to the web page.
-    4. Enjoy and Thank you for visiting our web page. 
-    Note: Programs needed for this: Flask Application, Flask-PyMongo, Python, Jupyter Notebook.  
-          Only run the mongo_setup code once to avoid duplicates in the data.
-
-Creating the Website: Created a website to display our data and the visualizations thereof using HTML, CSS, JavaScript, and Python. Python is used to build the Flask app that supports the website and interacts with the MongoDB database on the user's behalf, HTML is used to create the basic structure of the webpages, and JavaScript is used to build the visualizations and insert them into the pages. We then used Bootstrap and CSS to style the pages.
+Flask API website created to display our data and the visualizations thereof using HTML, CSS, JavaScript, and Python. Python is used to build the Flask app that supports the website and interacts with the MongoDB database on the user's behalf, HTML is used to create the basic structure of the webpages, and JavaScript is used to build the visualizations and insert them into the pages. We then used Bootstrap and CSS to style the pages.
   
 ## PROJECT OVERVIEW / STORY
 ### Hypothesis: Cities ranking higher in city green spaces have a lower:
         1.	obesity rate, 
         2.	mental health conditions, and 
-        3.	adhere to regular health check-ups. 
+        3.	Dr Visits for regular health check-ups. 
 
 ### Project Description: 
 We studied, for the year 2017, the number of parks in a city from the Trust for Public (TPL) Land and related it to the specific Health Conditions statistics documented based on populations in those cities by the Center of Disease Control and Prevention (CDC).  
 
 Created an interactive Flask website with visual representations of our data findings. 
-    1. For example User can select a 'city' from the list of cities in the DROPDOWN MENU. 
-    2. This will reveal in the INFORMATION BOX, the particulars pertaining to the selected city: City, City Park Score Rank, Obesity Value, Mental Health Value, Dr. Visits for Routine Checkup Value, coordinates of the city, Percentage of City Park Acerage.  
-    3. Selected city visualizations will display the Obesity Value, Mental Health Value, and the Dr. Visits Value. 
-    Bar Charts, Bubble Charts. 
-    4. Landing Page Map of the 95 cities with city parks and specific health data.  The size and color of the circle marker for each city corresponds to it Percentage of City Park Acerage. 
-    5. Various Chart Visualizations of the Top 10 cities i.e. cities with the highest Percentage of City Park Acrerage. 
+    1. Map of the 95 cities with acerage of city parks
+    2. Bar Charts showing the Top 10 cities and their health values: Obesity, Mental Health, Dr. Visits for routine check-ups, city park acerage.  
+    3. Scatter Plots for Health Values: Obesity, Mental Health, Dr. Visits   
 
-Hypothesis: Cities ranking higher in city green spaces have a lower:
-1.	obesity rate, 
-2.	mental health conditions, and 
-3.	adhere to regular health check-ups. 
+Hypothesis: Cities ranking higher in city green spaces have a:
+1.	lower obesity rate, 
+2.	lower mental health conditions, and 
+3.	higher adherence to regular health check-ups. 
 
 ### Study: 
         Based on Year 2017 data
@@ -56,7 +46,6 @@ Hypothesis: Cities ranking higher in city green spaces have a lower:
         We do not know how many people actually visited any of the city parks. 
 
 ### Visualizations. Paste visualizations here ......
-brief story of visualization.
 Visualization pictures are located in the 'images' folder. 
 
 ### CONCLUSION:
@@ -80,14 +69,6 @@ The aim of this project is to combine the skills acquired in different programmi
 
 The project is powered by a Python Flask API and includes HTML/CSS, JavaScript, and SQL database. 
 
-## Access the WEBPAGE using the Flask Application:
-    1. Find in the folder 'Data' the 'mongo_setup.ipynb' code file.
-    2. Run the mongo_setup.ipynb code file.
-    3. Run the 'app.py' code file located in the main directory 'City_Green_Space_and_Health' to get to the web page.
-    4. Enjoy and Thank you for visiting our web page. 
-    Note: Programs needed for this: Flask Application, Flask-PyMongo, Python, Jupyter Notebook.  
-          Only run the mongo_setup code once to avoid duplicates in the data.
-
 ### Programs Used
     SQLAlchemy was used to clean the datasets
     Database = Mongo Db
@@ -101,24 +82,24 @@ The project is powered by a Python Flask API and includes HTML/CSS, JavaScript, 
     Plotly
     Leaflet
     Apexchart (new library for the scatter plot)
-    FLASK Application 
-    Multiple user-driven interactions: dropdown menu / filters, zoom feature are included in the dashboard
+    FLASK API Application 
+    Multiple user-driven interactions: zoom feature are included in the dashboard
 
 ## Data Directories: 
-Main Directory name:  'City_Green_Space_and_Health/ with:
+Main Directory name:  'City_Green_Space_and_Health/  key contents: 
+    a500_cities_data
+    city_park_data
+    csv_outputs
     README
     app.py
     Presentation slides
-    DATA DIRECTORIES: 
-        csv_outputs 
-        City Park Facts files:' 
-        Data: MongoDb 'mongo_setup.ipynb', '500_cities_data_sort.ipynb, city_park_data_sort.ipynb, coords_cleaning.ipynb
+    Data: MongoDb: mongo_setup.ipynb, 500_cities_data_sort.ipynb, city_park_data_sort.ipynb, coords_cleaning.ipynb
     master_table_and_coords.csv
     master_table.json
-    SQL_table_schemas.sql
-    uscities.csv
-    static: /js contains JavaScript files (code files)  
-    templates: (code files) html files:  index.html, bar_chart.html, bubble_chart.html, map.html
+    SQL_table_schema
+    static: /js bar_chart.js, map.js, scatter_plot.js
+    static: /css mapstyle.css
+    templates: html files: home.html, bar_chart.html, scatter_plot.html, map.html
     images:pictures 
 
 ## Datasets Selected / Source: 
@@ -141,25 +122,20 @@ Main Directory name:  'City_Green_Space_and_Health/ with:
 
 3. Coordinates of the City,State from: https://simplemaps.com/data/us-cities
 
-
 ## Data Limitations: 
-Rank and Score provided in the data were used. The actual population size is unknown. 
-
+Health Values and Park Score provided in the data were used. The actual population size is unknown. 
 
 ## PROCESS & ANALYSIS: 
 ### Extraction, Transformation, and Loading 
-Extraction: Pandas to access and read the raw data from the CSV file. Raw Source Data files are located in 'a500_cities_data', 'City Park Facts', and 'csv_outputs'. 
-<!-- insert file of raw coordinates data file  -->
+Extraction: Pandas to access and read the raw data from the CSV file. Raw Source Data files are located in 'a500_cities_data', city_park_data, csv_outputs. 
 
 Transformation: Data cleansing: cleaned the data using Pandas in a Jupyter Notebook. Retained needed data from source data. 
 Cleaned data files located in the Data directory. '500_cities_data_sort.ipynb', 'city_park_data_sort.ipynb'. coords_cleaning.ipynb. 
-
+Tables: master_table.csv and master_table_and_coords.csv 
 Loading: After the data was cleaned and transformed, it was loaded into MongoDB using Pymongo. Data joins using City and State Keys.
 'Mongo_setup.ipynb' database setup file. 
 
-Tables: For testing purposes, master_table.csv and master_table.json were created with all the needed data. 
-
-## INSTRUCTIONS TO RECREATE THE RESULTS AND OPEN THE flask website:
+## INSTRUCTIONS TO RECREATE THE RESULTS:
     Before running the Jupyter Notebook files, ensure that your environment can use the following Python packages:
     Flask, 
     Pandas, 
@@ -174,9 +150,16 @@ Tables: For testing purposes, master_table.csv and master_table.json were create
     Open a new tab or window in Google Chrome, and navigate to the address specified in the terminal window (typically, this is 127.0.0.1:5000). This should open the Flask website on the index page.
 Use the navigation bar and links to visit the different pages of the website.
 
+## TO ACCESS THE FLASK API WEBSITE:
+    1. Find in the folder 'Data' the 'mongo_setup.ipynb' code file.
+    2. Run the mongo_setup.ipynb code file.
+    3. Run the 'app.py' code file located in the main directory 'City_Green_Space_and_Health' to get to the web page.
+    4. Enjoy and Thank you for visiting our web page. 
+    Note: Programs needed for this: Flask Application, Flask-PyMongo, Python, Jupyter Notebook.  
+          ONLY RUN ONCE: The mongo_setup code should only be run one time avoid data reloading and resulting in duplicates. To delete preiously loaded data from the mongo_setup.ipynb database, run " x = db.green_spaces_and_health3.delete_many({})   print(x.deleted_count, "docs deleted")  "
+
 # Acknowledgements: 
 Instructor: Hunter Hollis, TAs: Sam Espe and Randy Sendek, and Tutors for their guidance on this project.
-
 
 # References:  
 Colors hex codes: https://www.w3schools.com/colors/colors_picker.asp
