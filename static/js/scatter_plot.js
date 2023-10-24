@@ -8,30 +8,7 @@ d3.json(mongo_endpoint).then(function(data) {
 
 console.log(data.length);
 
-let listy = []      
-
-for (let i = 0; i < data.length; i++) {
-    listy.push(data[i].ob_data_value)
-};
-
-console.log(listy)
-
-let listx = []      
-
-for (let i = 0; i < data.length; i++) {
-    listx.push(data[i].city)
-};
-
-console.log(listx)
-
-let listz = []      
-
-for (let i = 0; i < data.length; i++) {
-  listz.push({acres: data[i].park_acres , ob_value: data[i].ob_data_value, city_name: data[i].city}) //listz.push(data[i].ob_data_value)
-};
-
-console.log(listz)
-
+// create a list to hold the data for obesity
 let data_points = [];
 
 for (let i = 0; i<data.length; i++) {
@@ -39,14 +16,7 @@ for (let i = 0; i<data.length; i++) {
 };
 console.log(data_points);
 
-let names = [];
-
-for (let i = 0; i<data.length; i++) {
-  names.push([data[i].city]) //listz.push(data[i].ob_data_value)
-};
-
-console.log(names);
-
+// create a list to hold the data for mental health
 let mh_data_points = [];
 
 for (let i = 0; i<data.length; i++) {
@@ -54,6 +24,7 @@ for (let i = 0; i<data.length; i++) {
 };
 console.log(mh_data_points);
 
+// create a list to hold the data for doctor visits
 let dv_data_points = [];
 
 for (let i = 0; i<data.length; i++) {
@@ -62,7 +33,7 @@ for (let i = 0; i<data.length; i++) {
 console.log(dv_data_points);
 
 
-
+// set the options for the chart
 let options = {
   series: [{
   name: "Obesity",
@@ -95,6 +66,7 @@ yaxis: {
 }
 };
 
+//aissign the chart
 let chart = new ApexCharts(document.querySelector("#bubble_plot"), options);
 chart.render();
 
