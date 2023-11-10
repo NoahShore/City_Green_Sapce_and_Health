@@ -85,8 +85,9 @@ To access the website, see the TECHNICAL DETAILS below.
     SQLAlchemy 
 
 ## Data Directories
-Main Directory: ['City_Green_Space_and_Health/](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main)   
-    Key Contents: 
+Main Directory: ['City_Green_Space_and_Health/](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main)  
+
+Key Contents: 
 ['a500_cities_data'](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/a500_cities_data)
 
 [app.py](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/app.py)
@@ -120,10 +121,10 @@ Main Directory: ['City_Green_Space_and_Health/](https://github.com/NoahShore/Cit
 ## Datasets / Source
 1.	TPL public data 
     [Green Spaces (City Parks)](https://www.tpl.org/park-data-downloads)
-    [City Parks Data for the year 2017](https://parkserve.tpl.org/downloads/historic/2017_ParkScoreRank.pdf)
-    The parks data downloadable zip file contains Excel sheets with the acreage data that we will be using.
-    [State data for each city in the City Parks](https://www.tpl.org/2023-city-park-facts)   
-    The State data from this file was added to the Cities Acreage Data for our analysis. 
+
+    [City Parks Data for the year 2017](https://parkserve.tpl.org/downloads/historic/2017_ParkScoreRank.pdf) Zip file contains Excel sheets with the acreage data.
+    
+    [State data for each city in the City Parks](https://www.tpl.org/2023-city-park-facts) The State data from this file was added to the Cities Acreage Data for our analysis. 
 
 2. CDC public data 
     [Doctor Visits for routine checkup](https://data.cdc.gov/500-Cities-Places/500-Cities-Visits-to-doctor-for-routine-checkup-wi/2q6t-jyye)
@@ -140,16 +141,23 @@ Main Directory: ['City_Green_Space_and_Health/](https://github.com/NoahShore/Cit
 ### Extraction, Transformation, and Loading 
 Extraction: Pandas to access and read the raw data from the CSV file. Raw Source Data files are located in:
 [a500_cities_data](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/a500_cities_data), 
+
 [city_park_data](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/city_park_data), 
+
 [csv_outputs](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/csv_outputs). 
 
 Transformation: Data cleansing: cleaned the data using Pandas in a Jupyter Notebook. Retained needed data from source data. 
-        Cleaned data files located in:
-[Data directory](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/Data) 
+Cleaned data files located in:
+[Data directory](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/Data)
+
 ['500_cities_data_sort.ipynb'](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/Data/500_cities_data_sort.ipynb), 
-['city_park_data_sort.ipynb'](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/Data/city_park_data_sort.ipynb), and  
+
+['city_park_data_sort.ipynb'](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/Data/city_park_data_sort.ipynb), and 
+
 ['coords_cleaning.ipynb'](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/Data/coords_cleaning.ipynb). 
+
 ['master_table.csv'](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/master_table.csv), and 
+
 ['master_table_and_coords.csv'](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/master_table_and_coords.csv) 
 
 Loading: After the data was cleaned and transformed, it was loaded into MongoDB using Pymongo. Data joins using City and State Keys.
