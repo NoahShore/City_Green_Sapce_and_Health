@@ -40,12 +40,17 @@ To access the website, see the TECHNICAL DETAILS below.
     We do not know the number of people who actually visit(ed) the city parks. 
 
 ## [Visualizations](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/images)
-    Pictures located in the 'images' folder. 
-<img src="map.png" alt="Cities Map" width="400" height="200">
+
+<img src="map.png" alt="Cities Map" width="800" height="400">
+
 <img src="scatter.plot.png" alt="Health Values by Cities" width="11400" height="300">
+
 <img src="parks_bar_chart.png" alt="Top Ten Park Acreages by City" width="11400" height="150">
+
 <img src="ob_bar_chart.png" alt="Top Ten Cities with Highest Obesity Prevalence by City" width="11400" height="150">
+
 <img src="mh_bar_chart.png" alt="Top Ten Cities with Highest Poor Mental Health Prevalence by City" width="11400" height="150">
+
 <img src="dv_bar_chart.png" alt="Top Ten Cities with Highest Routine Dr. Visits Prevalence by City" width="11400" height="150">
 
 ## Conclusion
