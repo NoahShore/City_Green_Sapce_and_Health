@@ -39,8 +39,14 @@ To access the website, see the TECHNICAL DETAILS below.
     We did not examine the coorelation between the number of city parks and the size or population of the city. 
     We do not know the number of people who actually visit(ed) the city parks. 
 
-## Visualizations
-    Visualization pictures are found in the 'images' folder. 
+## [Visualizations](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/images)
+    Pictures located in the 'images' folder. 
+<img src="map.png" alt="Cities Map" width="400" height="200">
+<img src="scatter.plot.png" alt="Health Values by Cities" width="11400" height="300">
+<img src="parks_bar_chart.png" alt="Top Ten Park Acreages by City" width="11400" height="150">
+<img src="ob_bar_chart.png" alt="Top Ten Cities with Highest Obesity Prevalence by City" width="11400" height="150">
+<img src="mh_bar_chart.png" alt="Top Ten Cities with Highest Poor Mental Health Prevalence by City" width="11400" height="150">
+<img src="dv_bar_chart.png" alt="Top Ten Cities with Highest Routine Dr. Visits Prevalence by City" width="11400" height="150">
 
 ## Conclusion
     It appears that there is little to no correlation between the acreage of city parks and the overall health of populations.
@@ -79,37 +85,39 @@ To access the website, see the TECHNICAL DETAILS below.
     SQLAlchemy was used to clean the datasets
 
 ## Data Directories
-    Main Directory: 'City_Green_Space_and_Health/   
+    Main Directory: ['City_Green_Space_and_Health/](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main)   
     Key Contents: 
-        a500_cities_data
-        app.py
-        city_park_data
-        csv_outputs
-        Data: mongo_setup.ipynb, 500_cities_data_sort.ipynb, city_park_data_sort.ipynb, coords_cleaning.ipynb
-        images:pictures 
-        master_table.json
-        master_table_and_coords.csv
-        Presentation slides
-        README
-        SQL_table_schema
-        static: /css mapstyle.css
-        static: /js bar_chart.js, map.js, scatter_plot.js
-        templates: html files: home.html, bar_chart.html, scatter_plot.html, map.html
+        [a500_cities_data](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/a500_cities_data)
+        [app.py](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/app.py)
+        [city_park_data](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/city_park_data)
+        [csv_outputs](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/csv_outputs)
+        [Data: ](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/Data)
+                mongo_setup.ipynb, 500_cities_data_sort.ipynb, city_park_data_sort.ipynb, coords_cleaning.ipynb
+        [images:](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/images)
+        [master_table.csv](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/master_table.csv)
+        [master_table_and_coords.csv](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/master_table_and_coords.csv)
+        [Presentation slides](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/Presentation%20Slides.pdf)
+        [README](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/README.md)
+        [SQL_schema](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/SQL-schema)
+        [static: /css](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/static/css) mapstyle.css
+        [static: /js](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/static/js) bar_chart.js, map.js, scatter_plot.js
+        [templates:](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/templates) 
+                html files: home.html, bar_chart.html, scatter_plot.html, map.html
 
 ## Datasets / Source
 1.	TPL public data 
-    Green Spaces (City Parks): https://www.tpl.org/park-data-downloads
-    City Parks Data for the year 2017: https://parkserve.tpl.org/downloads/historic/2017_ParkScoreRank.pdf
+    [Green Spaces (City Parks):](https://www.tpl.org/park-data-downloads)
+    [City Parks Data for the year 2017:](https://parkserve.tpl.org/downloads/historic/2017_ParkScoreRank.pdf)
     The parks data downloadable zip file contains Excel sheets with the acreage data that we will be using.
-    State data for each city in the City Parks: https://www.tpl.org/2023-city-park-facts This file has the City and State data.  
+    [State data for each city in the City Parks:](https://www.tpl.org/2023-city-park-facts) This file has the City and State data.  
     The State data from this file was added to the Cities Acreage Data for our analysis. 
 
 2. CDC public data 
-    Doctor Visits for routine checkup:  https://data.cdc.gov/500-Cities-Places/500-Cities-Visits-to-doctor-for-routine-checkup-wi/2q6t-jyye
-    Obesity: https://data.cdc.gov/500-Cities-Places/500-Cities-Obesity-among-adults-aged-18-years/bjvu-3y7d
-    Mental Health: https://data.cdc.gov/500-Cities-Places/500-Cities-Mental-health-not-good-for-14-days-amon/i2ek-k3pa
+    [Doctor Visits for routine checkup:](https://data.cdc.gov/500-Cities-Places/500-Cities-Visits-to-doctor-for-routine-checkup-wi/2q6t-jyye)
+    [Obesity:](https://data.cdc.gov/500-Cities-Places/500-Cities-Obesity-among-adults-aged-18-years/bjvu-3y7d)
+    [Mental Health:](https://data.cdc.gov/500-Cities-Places/500-Cities-Mental-health-not-good-for-14-days-amon/i2ek-k3pa)
 
-3. Coordinates of the City,State from: https://simplemaps.com/data/us-cities
+3. [Coordinates of the City,State from:](https://simplemaps.com/data/us-cities)
 
 ## Data Limitations: 
     Health Values and Park Score provided in the data were used. 
@@ -118,21 +126,21 @@ To access the website, see the TECHNICAL DETAILS below.
 ## Process and Analysis 
 ### Extraction, Transformation, and Loading 
     Extraction: Pandas to access and read the raw data from the CSV file. Raw Source Data files are located in:
-         'a500_cities_data', 
-         'city_park_data', 
-         'csv_outputs'. 
+         [a500_cities_data](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/a500_cities_data), 
+         [city_park_data](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/city_park_data), 
+         [csv_outputs](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/csv_outputs). 
 
     Transformation: Data cleansing: cleaned the data using Pandas in a Jupyter Notebook. Retained needed data from source data. 
         Cleaned data files located in:
-            Data directory: 
-                '500_cities_data_sort.ipynb', 
-                'city_park_data_sort.ipynb', and  
-                'coords_cleaning.ipynb'. 
-            'master_table.csv', and 
-            'master_table_and_coords.csv' 
+            [Data directory:](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/Data) 
+                ['500_cities_data_sort.ipynb'](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/Data/500_cities_data_sort.ipynb), 
+                ['city_park_data_sort.ipynb'](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/Data/city_park_data_sort.ipynb), and  
+                ['coords_cleaning.ipynb'](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/Data/coords_cleaning.ipynb). 
+            ['master_table.csv'](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/master_table.csv), and 
+            ['master_table_and_coords.csv'](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/master_table_and_coords.csv) 
 
     Loading: After the data was cleaned and transformed, it was loaded into MongoDB using Pymongo. Data joins using City and State Keys.
-        Database setup file: 'Mongo_setup.ipynb'. 
+        Database setup file: ['Mongo_setup.ipynb'](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/Data/mongo_setup.ipynb). 
 
 ### Instructions to recreate the results
     Before running the Jupyter Notebook files, ensure that your environment can use the following Python packages:
