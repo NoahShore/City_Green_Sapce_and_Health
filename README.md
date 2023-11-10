@@ -71,53 +71,66 @@ To access the website, see the TECHNICAL DETAILS below.
 
 ## Programs Used
     Apexchart 
-    CSS 
-    D3 JSON 
-    FLASK API Application 
-    HTML
-    JavaScript
-    Leaflet
-    MongoDB
-    Multiple user-driven interactions: zoom feature are included in the dashboard
-    Pandas
-    Plotly
-    Python, Jupyter Notebook
-    SQLAlchemy was used to clean the datasets
+    CSS
+    D3 JSON
+    FLASK API Application
+    HTML
+    JavaScript
+    Leaflet
+    MongoDB
+    Multiple user-driven interactions: zoom feature are included in the dashboard
+    Pandas
+    Plotly
+    Python, Jupyter Notebook
+    SQLAlchemy 
 
 ## Data Directories
-    Main Directory: ['City_Green_Space_and_Health/](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main)   
+Main Directory: ['City_Green_Space_and_Health/](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main)   
     Key Contents: 
-        [a500_cities_data](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/a500_cities_data)
-        [app.py](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/app.py)
-        [city_park_data](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/city_park_data)
-        [csv_outputs](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/csv_outputs)
-        [Data: ](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/Data)
-                mongo_setup.ipynb, 500_cities_data_sort.ipynb, city_park_data_sort.ipynb, coords_cleaning.ipynb
-        [images:](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/images)
-        [master_table.csv](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/master_table.csv)
-        [master_table_and_coords.csv](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/master_table_and_coords.csv)
-        [Presentation slides](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/Presentation%20Slides.pdf)
-        [README](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/README.md)
-        [SQL_schema](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/SQL-schema)
-        [static: /css](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/static/css) mapstyle.css
-        [static: /js](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/static/js) bar_chart.js, map.js, scatter_plot.js
-        [templates:](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/templates) 
-                html files: home.html, bar_chart.html, scatter_plot.html, map.html
+['a500_cities_data'](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/a500_cities_data)
+
+[app.py](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/app.py)
+ 
+[city_park_data](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/city_park_data)
+
+[csv_outputs](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/csv_outputs)
+
+[Data: ](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/Data)
+        mongo_setup.ipynb, 500_cities_data_sort.ipynb, city_park_data_sort.ipynb, coords_cleaning.ipynb
+
+[images:](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/images)
+
+[master_table.csv](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/master_table.csv)
+
+[master_table_and_coords.csv](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/master_table_and_coords.csv)
+            
+[Presentation slides](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/Presentation%20Slides.pdf)
+            
+[README](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/README.md)
+            
+[SQL_schema](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/SQL-schema)
+            
+[css](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/static/css) 
+    [mapstyle.css](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/static/css/mapstyle.css)
+            
+[js](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/static/js) bar_chart.js, map.js, scatter_plot.js
+            
+[templates:](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/templates) [home.html](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/templates/home.html), [bar_chart.html](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/templates/bar_chart.html), [scatter_plot.html](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/templates/scatter_plot.html), [map.html](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/templates/map.html)
 
 ## Datasets / Source
 1.	TPL public data 
-    [Green Spaces (City Parks):](https://www.tpl.org/park-data-downloads)
-    [City Parks Data for the year 2017:](https://parkserve.tpl.org/downloads/historic/2017_ParkScoreRank.pdf)
+    [Green Spaces (City Parks)](https://www.tpl.org/park-data-downloads)
+    [City Parks Data for the year 2017](https://parkserve.tpl.org/downloads/historic/2017_ParkScoreRank.pdf)
     The parks data downloadable zip file contains Excel sheets with the acreage data that we will be using.
-    [State data for each city in the City Parks:](https://www.tpl.org/2023-city-park-facts) This file has the City and State data.  
+    [State data for each city in the City Parks](https://www.tpl.org/2023-city-park-facts)   
     The State data from this file was added to the Cities Acreage Data for our analysis. 
 
 2. CDC public data 
-    [Doctor Visits for routine checkup:](https://data.cdc.gov/500-Cities-Places/500-Cities-Visits-to-doctor-for-routine-checkup-wi/2q6t-jyye)
-    [Obesity:](https://data.cdc.gov/500-Cities-Places/500-Cities-Obesity-among-adults-aged-18-years/bjvu-3y7d)
-    [Mental Health:](https://data.cdc.gov/500-Cities-Places/500-Cities-Mental-health-not-good-for-14-days-amon/i2ek-k3pa)
+    [Doctor Visits for routine checkup](https://data.cdc.gov/500-Cities-Places/500-Cities-Visits-to-doctor-for-routine-checkup-wi/2q6t-jyye)
+    [Obesity](https://data.cdc.gov/500-Cities-Places/500-Cities-Obesity-among-adults-aged-18-years/bjvu-3y7d)
+    [Mental Health](https://data.cdc.gov/500-Cities-Places/500-Cities-Mental-health-not-good-for-14-days-amon/i2ek-k3pa)
 
-3. [Coordinates of the City,State from:](https://simplemaps.com/data/us-cities)
+3. [Coordinates of the City,State from](https://simplemaps.com/data/us-cities)
 
 ## Data Limitations: 
     Health Values and Park Score provided in the data were used. 
@@ -125,21 +138,21 @@ To access the website, see the TECHNICAL DETAILS below.
 
 ## Process and Analysis 
 ### Extraction, Transformation, and Loading 
-    Extraction: Pandas to access and read the raw data from the CSV file. Raw Source Data files are located in:
-         [a500_cities_data](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/a500_cities_data), 
-         [city_park_data](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/city_park_data), 
-         [csv_outputs](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/csv_outputs). 
+Extraction: Pandas to access and read the raw data from the CSV file. Raw Source Data files are located in:
+[a500_cities_data](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/a500_cities_data), 
+[city_park_data](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/city_park_data), 
+[csv_outputs](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/csv_outputs). 
 
-    Transformation: Data cleansing: cleaned the data using Pandas in a Jupyter Notebook. Retained needed data from source data. 
+Transformation: Data cleansing: cleaned the data using Pandas in a Jupyter Notebook. Retained needed data from source data. 
         Cleaned data files located in:
-            [Data directory:](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/Data) 
-                ['500_cities_data_sort.ipynb'](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/Data/500_cities_data_sort.ipynb), 
-                ['city_park_data_sort.ipynb'](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/Data/city_park_data_sort.ipynb), and  
-                ['coords_cleaning.ipynb'](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/Data/coords_cleaning.ipynb). 
-            ['master_table.csv'](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/master_table.csv), and 
-            ['master_table_and_coords.csv'](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/master_table_and_coords.csv) 
+[Data directory](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/Data) 
+['500_cities_data_sort.ipynb'](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/Data/500_cities_data_sort.ipynb), 
+['city_park_data_sort.ipynb'](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/Data/city_park_data_sort.ipynb), and  
+['coords_cleaning.ipynb'](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/Data/coords_cleaning.ipynb). 
+['master_table.csv'](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/master_table.csv), and 
+['master_table_and_coords.csv'](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/master_table_and_coords.csv) 
 
-    Loading: After the data was cleaned and transformed, it was loaded into MongoDB using Pymongo. Data joins using City and State Keys.
+Loading: After the data was cleaned and transformed, it was loaded into MongoDB using Pymongo. Data joins using City and State Keys.
         Database setup file: ['Mongo_setup.ipynb'](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/Data/mongo_setup.ipynb). 
 
 ### Instructions to recreate the results
