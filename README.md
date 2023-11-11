@@ -104,23 +104,23 @@ Key Contents:
 [Data: ](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/Data)
         mongo_setup.ipynb, 500_cities_data_sort.ipynb, city_park_data_sort.ipynb, coords_cleaning.ipynb
 
-[images:](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/images)
+[images](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/images)
 
 [master_table.csv](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/master_table.csv)
 
 [master_table_and_coords.csv](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/master_table_and_coords.csv)
-            
+
 [Presentation slides](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/Presentation%20Slides.pdf)
-            
+
 [README](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/README.md)
-            
+
 [SQL_schema](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/SQL-schema)
-            
+
 [css](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/static/css) 
     [mapstyle.css](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/static/css/mapstyle.css)
-            
+
 [js](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/static/js) bar_chart.js, map.js, scatter_plot.js
-            
+
 [templates:](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/templates) [home.html](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/templates/home.html), [bar_chart.html](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/templates/bar_chart.html), [scatter_plot.html](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/templates/scatter_plot.html), [map.html](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/templates/map.html)
 
 ## Datasets / Source
