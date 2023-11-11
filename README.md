@@ -45,13 +45,13 @@ To access the website, see the TECHNICAL DETAILS below.
 
 <img src="images\scatter.plot.png" alt="Health Values by Cities" width="11400" height="300">
 
-<img src="images\parks_bar_chart.png" alt="Top Ten Park Acreages by City" width="11400" height="200">
+<img src="images\parks_bar_chart.png" alt="Top Ten Park Acreages by City" width="11500" height="300">
 
-<img src="images\ob_bar_chart.png" alt="Top Ten Cities with Highest Obesity Prevalence by City" width="11400" height="200">
+<img src="images\ob_bar_chart.png" alt="Top Ten Cities with Highest Obesity Prevalence by City" width="11500" height="300">
 
-<img src="images\mh_bar_chart.png" alt="Top Ten Cities with Highest Poor Mental Health Prevalence by City" width="11400" height="200">
+<img src="images\mh_bar_chart.png" alt="Top Ten Cities with Highest Poor Mental Health Prevalence by City" width="11500" height="300">
 
-<img src="images\dv_bar_chart.png" alt="Top Ten Cities with Highest Routine Dr. Visits Prevalence by City" width="11400" height="200">
+<img src="images\dv_bar_chart.png" alt="Top Ten Cities with Highest Routine Dr. Visits Prevalence by City" width="11500" height="300">
 
 ## Conclusion
     It appears that there is little to no correlation between the acreage of city parks and the overall health of populations.
