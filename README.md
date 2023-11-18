@@ -1,162 +1,174 @@
-# City Green Space and Health: Obesity, Metal Health, Dr. visits for routine check-ups                       Updated 10/19/2023
-## BootCamp: Data Visualization and Data Analytics Course Project 3, Group 4 
-Project Group 4 Team Members: Gabriela D. Salazar, Kent Andrews, Noah Shore, Naseema Omer 
+# City Green Space and Health                     
+    BootCamp: Data Visualization and Data Analytics Course Project 3, Group 4 
+    Project Group Members: Gabriela D. Salazar, Kent Andrews, Noah Shore, Naseema Omer 
 
-# GitHub Repository: https://github.com/NoahShore/City_Green_Sapce_and_Health 
-Please refer to the TECHNICAL DETAILS below for the listing of the Repository Directory Contents.
+# Website
+Interactive Python powered Flask API website created to display our data and the visualizations using HTML, CSS, JavaScript, and Python. 
+    Python is used to build the Flask app that supports the website and interacts with the MongoDB database on the user's behalf, 
+    HTML is used to create the basic structure of the webpages, and 
+    JavaScript is used to build the visualizations and insert them into the pages. 
+    Bootstrap and CSS used to style the pages.
 
-# Website: 
-Interactive FLASK Website with User driven dropdown menu for City selections, Map / Chart visualizations. Pop-ups with statistical data for city selected. 
+Navigate links on website to visit pages: Home, Bar Chart, interactive Map and Scatter Plot. 
+Click on a city in the map to view more information. Click on the scatter plot to view health values.  
 
-To access the website, refer to TECHNICAL DETAILS below in 'INSTRUCTIONS TO RECREATE THE RESULTS AND OPEN THE flask website' for step-by-step instructions.
-
-Creating the Website: Created a website to display our data and the visualizations thereof using HTML, CSS, JavaScript, and Python. Python used to build the Flask app that supports the website and interacts with the MongoDB database on the user's behalf, HTML to create the basic structure of the webpages, and JavaScript to build the visualizations and insert them into the pages. We then used Bootstrap and CSS to style the pages.
+To access the website, see the TECHNICAL DETAILS below.
   
-## PROJECT OVERVIEW / STORY
-### Hypothesis: Cities ranking higher in city green spaces have a lower:
-        1.	obesity rate, 
-        2.	mental health conditions, and 
-        3.	adhere to regular health check-ups. 
+# Project Overview / Story
+## Project Description
+    Studied year 2017 data:
+        Top 100 city parks data from the Trust for Public (TPL) Land, and related it to 
+        Health data on populations in those cities obtained from the Center of Disease Control and Prevention (CDC). 
+            Health data for adults aged 18 and over for:
+            1. Obesity,
+            2. Mental Health (those reported as unwell for a minimum of 14 days), and 
+            3. Visits to Doctor for Routine Check-ups. 
 
-### Project Description: 
-We studied, for year 2017, the number of parks in a city from the Trust for Public (TPL) Land and related it to the specific Health Conditions'statistics documented based on populations in those cities by the Center of Disease Control and Prevention (CDC).  
+    Created an interactive Flask website with visual representations of our data findings. 
+        1. Map of the 95 cities with acerage of city parks
+        2. Bar Charts showing the Top 10 cities and their health values: Obesity, Mental Health, Dr. Visits for routine check-ups, city park acerage.  
+        3. Scatter Plots for Health Values: Obesity, Mental Health, Dr. Visits   
 
-Created an interactive Flask website with visual representations of our data findings. 
-    1. For example User can select a 'city' from the list of cities in the DROPDOWN MENU. 
-    2. This will reveal in the INFORMATION BOX, the particulars pertaining to the selected city: City, City Park Score Rank, Obesity Value, Mental Health Value, Dr. Visits for Routine Checkup Value, coordinates of the city, Percentage of City Park Acerage.  
-    3. Selected city visualizations will display to display the Obesity Value, Mental Health Value and the Dr. Visits Value. 
-    Bar Charts, Bubble Charts. 
-    4. Landing Page Map of the 95 cities with city park and specific health data.  The size and color of the circle marker for each city corresponds to it Percentage of City Park Acerage. 
-    5. Various Chart Visualizations of the Top 10 cities i.e. cities with the highest Percentage of City Park Acerage. 
+## Hypothesis: Cities ranking higher in city green spaces have a
+    1.	lower obesity rate, 
+    2.	lower mental health conditions, and 
+    3.	higher adherence to regular health check-ups.         
 
-Define the CDC 'Value': 
-Define the 'Park Score Rank':
-Define Percentage of City Park Acerage: 
-Total Acerage: Total City-Park area in the city. 
+## Assumptions
+    Healthier populations use the city parks more perhaps due to convenience, work schedules, lifestyles, safer environments, and their ages.
+    We did not examine the coorelation between the number of city parks and the size or population of the city. 
+    We do not know the number of people who actually visit(ed) the city parks. 
 
-Hypothesis: Cities ranking higher in city green spaces have a lower:
-1.	obesity rate, 
-2.	mental health conditions, and 
-3.	adhere to regular health check-ups. 
+## [Visualizations](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/images)
 
-### Study: 
-        Based for Year 2017 data
-        Explored 100 USA Cities
-        For Health conditions:
-            Obesity. Age Group Adults >=18 years
-            Mental Health not good for >=14 days. Age Group Adults >=18 years 
-            Visits to Doctor for Routine Check-ups.  Age Group Adults >=18 years
+<img src="images\map.png" alt="Cities Map" width="800" height="400">
 
-### Assumptions:
-        Assumptions: Healthier populations use the city parks more perhaps due to conveniance, work schedules, lifestyles, safer environments, their ages, ......
-        We did not look at whether the number of city parks was in proportion to the size of the city and its population. 
-        We do not know how many people actually visited any of the city parks. 
+<img src="images\scatter.plot.png" alt="Health Values by Cities" width="11400" height="300">
 
-### Summary: 
+<img src="images\parks_bar_chart.png" alt="Top Ten Park Acreages by City" width="11500" height="300">
 
-### Visualizations. Paste visualizations here ......
-brief story of visualization..
-Visualization pictures are located in the 'images' folder. 
+<img src="images\ob_bar_chart.png" alt="Top Ten Cities with Highest Obesity Prevalence by City" width="11500" height="300">
 
-### CONCLUSION:
+<img src="images\mh_bar_chart.png" alt="Top Ten Cities with Highest Poor Mental Health Prevalence by City" width="11500" height="300">
 
+<img src="images\dv_bar_chart.png" alt="Top Ten Cities with Highest Routine Dr. Visits Prevalence by City" width="11500" height="300">
 
-### NEXT STEPS: 
-Visit green spaces more often for various activities: Walks, bike rides, lunches / picnics, reading, meditations, etc. 
+## Conclusion
+    It appears that there is little to no correlation between the acreage of city parks and the overall health of populations.
 
-Visit your care provider for your wellness and health routine check-ups
+## Action Items 
+    Visit green spaces more often for various activities: Walks, bike rides, lunches / picnics, reading, meditations, etc. 
 
-Business can implement more wellness or within their wellness / incentive program offerings to encourage employees/families to enjoy green spaces
+    Visit your care provider for wellness and health routine check-ups.
 
-City or State Parks could develop apps for personal tracking of park visits to encourage more people to make the effort, and track their activities (fitness measures) specifically completed oon park grounds.  
+    Businesses may implement more wellness or within their wellness / incentive program offerings to encourage employees/families to enjoy green spaces.
 
-Parks could gather counts of active app users to leverage getting more funding/grants for parks, and educational, wellness programs in the parks. 
+## Next Steps
 
-Further research / analysis is needed on the density of the city compared to the number of city parks, counts of visits to the park, geographical locations income level of neighbourhoods,
+    City or State Parks could develop apps for personal tracking of park visits to encourage more people to make the effort and track their activities (fitness measures) specifically completed on park grounds.  
 
-## TECHNICAL DETAILS: 
-The aim of this project is to combine the skills acquired in different programming languages and storytelling skills to create an interactive dashboard. The dashboard includes different visualizations representing the data gathered, cleaned, and analyzed to illustrate the impacts of health as it relates to available and accessible outdoor green spaces.
+    Parks could gather counts of active app users to leverage getting more funding/grants for parks, and educational, wellness programs in the parks. 
 
-The project is powered by a Python Flask API and includes HTML/CSS, JavaScript, SQL database. 
+    Further research / analysis is needed on the density of the city compared to the number of city parks, counts of visits to the park, geographical locations income level of neighborhoods,
 
-## Access the WEBPAGE using the Flask Application:
-    1. Find in the folder 'Data' the 'mongo_setup.ipynb' code file.
-    2. Run the mongo_setup.ipynb code file.
-    3. Run the 'app.py' code file located in the main directory 'City_Green_Space_and_Health' to get to the Webpage.
-    4. Enjoy and Thank you for visiting our WebPage. 
-    Note: programs needed for this: Flask Application, Flask-PyMongo, Python, Jupyter Notebook.  
+# Technical Details 
+    The aim of this project is to combine the skills acquired in different programming languages and storytelling to create an interactive dashboard. The dashboard includes different visualizations representing the data gathered, cleaned, and analyzed to illustrate the impacts of health as it relates to available and accessible outdoor green spaces.
 
-### Programs Used
-    SQLAlchemy was used to clean the datasets
-    Database = Mongo Db
-    JavaScript
-    <!-- SQL (Postgres 14) was used to create a database with the cvs files with the data utilized and to show that it ran properly (screenshots attached). -->
-    CSS was used to style 
+## Programs Used
+    Apexchart 
+    CSS
+    D3 JSON
+    FLASK API Application
     HTML
-    D3 JSON 
-    Pandas
-    Python, Jupyter Notebook
-    Plotly
+    JavaScript
     Leaflet
-    FLASK Application 
-    Multiple user-driven interactions: dropdown menu / filters, zoom feature are included in the dashboard
+    MongoDB
+    Multiple user-driven interactions: zoom feature are included in the dashboard
+    Pandas
+    Plotly
+    Python, Jupyter Notebook
+    SQLAlchemy 
 
-## Data Directories: 
-Main Directory name:  'City_Green_Space_and_Health/ with:
-    README
-    app.py
-    Presentation slides
-    DATA DIRECTORIES: 
-        csv_outputs 
-        City Park Facts files:' 
-        Data: MongoDb 'mongo_setup.ipynb', '500_cities_data_sort.ipynb, city_park_data_sort.ipynb, coords_cleaning.ipynb
-    master_table_and_coords.csv
-    master_table.json
-    SQL_table_schemas.sql
-    uscities.csv
-    static: /js contains JavaScript files (code files)  
-    templates: (code files) html files:  index.html, bar_chart.html, bubble_chart.html, map.html
-    images:pictures 
+## Data Directories
+Main Directory: ['City_Green_Space_and_Health/](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main)  
 
-## Datasets Selected / Source: 
+Key Contents: 
+['a500_cities_data'](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/a500_cities_data)
+
+[app.py](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/app.py)
+ 
+[city_park_data](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/city_park_data)
+
+[csv_outputs](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/csv_outputs)
+
+[Data: ](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/Data)
+        [mongo_setup.ipynb](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/Data/mongo_setup.ipynb), [500_cities_data_sort.ipynb](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/Data/500_cities_data_sort.ipynb), [city_park_data_sort.ipynb](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/Data/city_park_data_sort.ipynb) and [coords_cleaning.ipynb](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/Data/city_park_data_sort.ipynb)
+
+[images](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/images)
+
+[master_table.csv](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/master_table.csv)
+
+[master_table_and_coords.csv](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/master_table_and_coords.csv)
+
+[Presentation slides](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/Presentation%20Slides.pdf)
+
+[README](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/README.md)
+
+[SQL_schema](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/SQL-schema)
+
+[static/css](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/static/css) 
+    [mapstyle.css](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/static/css/mapstyle.css)
+
+[static/js](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/static/js) [bar_chart.js](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/static/js/bar_chart.js), [map.js](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/static/js/map.js) and [scatter_plot.js](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/static/js/scatter_plot.js)
+
+[templates:](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/templates) [home.html](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/templates/home.html), [bar_chart.html](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/templates/bar_chart.html), [scatter_plot.html](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/templates/scatter_plot.html), [map.html](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/templates/map.html)
+
+## Datasets / Source
 1.	TPL public data 
-    Green Spaces (City Parks): https://www.tpl.org/park-data-downloads
+    [Green Spaces (City Parks)](https://www.tpl.org/park-data-downloads)
 
-    City Parks Data for year 2017: https://parkserve.tpl.org/downloads/historic/2017_ParkScoreRank.pdf
-
-    The parks data downloadable zip file contains excel sheets with the acreage data that we will be using.
-
-    State data for each city in the City Parks: https://www.tpl.org/2023-city-park-facts This file has the City and State data.  
-    The State data from this file was added to the Cities Acreage Data for our analysis. 
+    [City Parks Data for the year 2017](https://parkserve.tpl.org/downloads/historic/2017_ParkScoreRank.pdf) Zip file contains Excel sheets with the acreage data.
+    
+    [State data for each city in the City Parks](https://www.tpl.org/2023-city-park-facts) The State data from this file was added to the Cities Acreage Data for our analysis. 
 
 2. CDC public data 
-    Doctor Visits for routine checkup:  https://data.cdc.gov/500-Cities-Places/500-Cities-Visits-to-doctor-for-routine-checkup-wi/2q6t-jyye
+    [Doctor Visits for routine checkup](https://data.cdc.gov/500-Cities-Places/500-Cities-Visits-to-doctor-for-routine-checkup-wi/2q6t-jyye)
+    [Obesity](https://data.cdc.gov/500-Cities-Places/500-Cities-Obesity-among-adults-aged-18-years/bjvu-3y7d)
+    [Mental Health](https://data.cdc.gov/500-Cities-Places/500-Cities-Mental-health-not-good-for-14-days-amon/i2ek-k3pa)
 
-    Obesity: https://data.cdc.gov/500-Cities-Places/500-Cities-Obesity-among-adults-aged-18-years/bjvu-3y7d
-
-    Mental Health: https://data.cdc.gov/500-Cities-Places/500-Cities-Mental-health-not-good-for-14-days-amon/i2ek-k3pa
-
-3. Coordinates of the City,State from: https://
-
+3. [Coordinates of the City,State from](https://simplemaps.com/data/us-cities)
 
 ## Data Limitations: 
-Rank and Score provided in data was used. The actual population size unknown. 
+    Health Values and Park Score provided in the data were used. 
+    The actual city population and city size was not used. 
 
+## Process and Analysis 
+### Extraction, Transformation, and Loading 
+Extraction: Pandas to access and read the raw data from the CSV file. Raw Source Data files are located in:
+[a500_cities_data](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/a500_cities_data), 
 
-## PROCESS & ANALYSIS: 
-### Extraction, Transformation and Loading 
-Extraction: Pandas to access and read in the raw data from the CSV file. Raw Source Data files located in 'a500_cities_data', 'City Park Facts', 'csv_outputs'. 
-<!-- insert file of raw coordinates data file  -->
+[city_park_data](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/city_park_data), 
+
+[csv_outputs](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/csv_outputs). 
 
 Transformation: Data cleansing: cleaned the data using Pandas in a Jupyter Notebook. Retained needed data from source data. 
-Cleaned data files located in: Data directory. '500_cities_data_sort.ipynb', 'city_park_data_sort.ipynb'. coords_cleaning.ipynb. 
+Cleaned data files located in:
+[Data directory](https://github.com/NoahShore/City_Green_Space_and_Health/tree/main/Data)
 
-Loading: After data was cleaned and transformed, it was loaded into MongoDB using Pymongo. Data joins using City and State Keys.
-'Mongo_setup.ipynb' database set up file. 
+['500_cities_data_sort.ipynb'](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/Data/500_cities_data_sort.ipynb), 
 
-Tables: For testing purposes, master_table.csv and master_table.json created with all the needed data. 
+['city_park_data_sort.ipynb'](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/Data/city_park_data_sort.ipynb), and 
 
-## INSTRUCTIONS TO RECREATE THE RESULTS AND OPEN THE flask website:
+['coords_cleaning.ipynb'](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/Data/coords_cleaning.ipynb). 
+
+['master_table.csv'](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/master_table.csv), and 
+
+['master_table_and_coords.csv'](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/master_table_and_coords.csv) 
+
+Loading: After the data was cleaned and transformed, it was loaded into MongoDB using Pymongo. Data joins using City and State Keys.
+        Database setup file: ['Mongo_setup.ipynb'](https://github.com/NoahShore/City_Green_Space_and_Health/blob/main/Data/mongo_setup.ipynb). 
+
+### Instructions to recreate the results
     Before running the Jupyter Notebook files, ensure that your environment can use the following Python packages:
     Flask, 
     Pandas, 
@@ -169,15 +181,17 @@ Tables: For testing purposes, master_table.csv and master_table.json created wit
     Close the Jupyter Notebook, and end the Jupyter Notebook session.
     On the command line, open app.py using Python.
     Open a new tab or window in Google Chrome, and navigate to the address specified in the terminal window (typically, this is 127.0.0.1:5000). This should open the Flask website on the index page.
-Use the navigation bar and links to visit the different pages of the website.
+    Use the navigation bar and links to visit the different pages of the website.
+
+## To access the Flask API Website
+    1. Find 'mongo_setup.ipynb' code file in the 'Data' folder.
+    2. Run the mongo_setup.ipynb code file.
+    3. Run the 'app.py' code file located in the main directory 'City_Green_Space_and_Health' to get to the web page.
+    4. Enjoy and Thank you for visiting our web page. 
+    
+    Note: Programs needed for this: Flask Application, Flask-PyMongo, Python, Jupyter Notebook.  
+          
+    CAUTION: RUN ONCE ONLY the mongo_setup code file to avoid data reloading and resulting in duplicates. To delete preiously loaded data from the mongo_setup.ipynb database, run " x = db.green_spaces_and_health3.delete_many({})   print(x.deleted_count, "docs deleted")  "
 
 # Acknowledgements: 
 Instructor: Hunter Hollis, TAs: Sam Espe and Randy Sendek, and Tutors for their guidance on this project.
-
-
-# References:  
-Colors hex codes: https://www.w3schools.com/colors/colors_picker.asp
-
-https://www.geeksforgeeks.org/split-a-text-column-into-two-columns-in-pandas-dataframe/
-
-https://saturncloud.io/blog/how-to-remove-commas-from-all-columns-in-pandas-at-once/#:~:text=Now%20that%20we%20know%20which,replace()%20function%20in%20Pandas.&text=In%20this%20code%2C%20we%20loop%20through%20each%20column%20that%20contains,the%20commas%20from%20the%20column

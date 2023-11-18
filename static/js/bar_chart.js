@@ -6,7 +6,7 @@ d3.json(mongo_endpoint).then(function(data) {
 
 let sorted = data.sort((a, b) => b.park_acres - a.park_acres);
 
-slicedData = sorted.slice(0, 10);
+slicedData = sorted.slice(1, 11);
 
 let trace1 = {
     x: slicedData.map(row => row.city), // ASK IF YOU CAN ADD STATE WITH THIS
@@ -54,7 +54,7 @@ let trace4 = {
 let traceData4 = [trace4];
 
 let layout4 ={
-    title: "Top 10 Highest Poor Mentalh Health Prevalence by City"
+    title: "Top 10 Highest Poor Mental Health Prevalence by City"
 };
 
 Plotly.newPlot("plot4", traceData4, layout4);
